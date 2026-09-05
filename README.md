@@ -62,6 +62,31 @@ npm run catalog     # rebuild src/data/catalog.json + write a snapshot
 npm run snapshot    # archive a price snapshot only (run this hourly)
 ```
 
+## Deploying
+
+Set these on the host (Vercel, or anywhere else):
+
+| Variable | Value |
+|---|---|
+| `DATA_GOV_API_KEY` | **Required.** Your data.gov.in key. |
+| `NEXT_PUBLIC_SITE_URL` | **Required.** The real origin, e.g. `https://mandi-price.vercel.app`. Canonicals, hreflang and sitemaps are wrong without it. |
+| `MANDI_SOURCE` | **Do not set this in a hosted environment.** `snapshot` reads local gzipped files that are gitignored and therefore never exist on the host; the build fails with a missing `snapshots/` directory. It is a local development mode only. |
+| `PRERENDER_PRICE_PAGES` | Optional, default `12`. |
+| `PRERENDER_MANDI_PAGES` | Optional, default `0`. |
+
+**Why the prerender counts are so low.** Every prerendered price or mandi page costs one
+upstream request during the build, and data.gov.in rate-limits hard — it returns 429 and
+then 403 well before a few hundred requests. Prerendering the whole catalog does not just
+make builds slow, it makes them *fail*. Everything not prerendered is still served:
+`dynamicParams` plus `revalidate` render the long tail on first request and cache it from
+there. Raise these only with a key that has headroom, and measure the build.
+
+Upstream failures degrade rather than break: a page that cannot reach the API renders a
+"prices could not be loaded" state and is replaced with real data on the next
+revalidation, so a bad minute on a government API never fails a deploy. That state is
+kept distinct from "no arrivals reported today" — conflating an outage with a quiet
+market would tell the reader something false.
+
 ## Architecture
 
 ```

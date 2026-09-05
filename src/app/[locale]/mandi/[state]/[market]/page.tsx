@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { findMarket, findState, getStates } from '@/lib/catalog';
+import { PRERENDER_MANDI_PAGES } from '@/lib/prerender';
 import { getSource } from '@/lib/mandi';
 import { summarise } from '@/lib/mandi/derive';
 import { formatDate, formatNumber, formatPrice, formatUpdatedIST } from '@/lib/format';
@@ -24,30 +25,62 @@ interface Params {
   market: string;
 }
 
-/** Only the largest states' mandis are pre-built; the rest render on first request. */
+/**
+ * Mandi pages are not prerendered by default - there are hundreds, each costing an
+ * upstream request at build time against a rate-limited API, and they are lower search
+ * volume than the crop pages. `dynamicParams` renders them on first request instead.
+ * See `lib/prerender.ts`.
+ */
 export function generateStaticParams() {
   const params: { locale: string; state: string; market: string }[] = [];
-  for (const state of getStates().slice(0, 6)) {
+  if (PRERENDER_MANDI_PAGES === 0) return params;
+
+  for (const state of getStates()) {
     for (const district of state.districts) {
       for (const market of district.markets) {
         params.push({ locale: 'en', state: state.slug, market: market.slug });
+        if (params.length >= PRERENDER_MANDI_PAGES) return params;
       }
     }
   }
-  return params.slice(0, 600);
+  return params;
 }
 
+/**
+ * Degrades on upstream failure rather than throwing - see the equivalent note on the
+ * price page. "Could not load" is reported separately from "no arrivals today", because
+ * conflating an outage with a quiet market would misinform the reader.
+ */
 async function load(params: Params) {
   const state = findState(params.state);
   const market = findMarket(params.state, params.market);
   if (!state || !market) return null;
 
-  const page = await getSource().getPrices({
-    state: state.api,
-    market: market.api,
-    limit: 300,
-  });
-  return { state, market, page };
+  try {
+    const page = await getSource().getPrices({
+      state: state.api,
+      market: market.api,
+      limit: 300,
+    });
+    return { state, market, page, unavailable: false };
+  } catch (error) {
+    console.error(
+      `[mandi] upstream failed for ${market.api}:`,
+      error instanceof Error ? error.message : error,
+    );
+    return {
+      state,
+      market,
+      page: {
+        records: [],
+        total: 0,
+        truncated: false,
+        updatedAt: null,
+        fetchedAt: new Date().toISOString(),
+      },
+      unavailable: true,
+    };
+  }
 }
 
 export async function generateMetadata({
@@ -90,7 +123,7 @@ export default async function MarketPage({ params }: { params: Promise<Params> }
 
   const data = await load(p);
   if (!data) notFound();
-  const { state, market, page } = data;
+  const { state, market, page, unavailable } = data;
   const s = summarise(page.records);
 
   const district = state.districts.find((dist) => dist.slug === market.districtSlug);
@@ -155,7 +188,9 @@ export default async function MarketPage({ params }: { params: Promise<Params> }
       </section>
 
       <div className="mx-auto max-w-4xl px-4">
-        {s.quoted === 0 ? (
+        {unavailable ? (
+          <EmptyState title={d.common.unavailable} help={d.common.unavailableHelp} />
+        ) : s.quoted === 0 ? (
           <EmptyState
             title={t(d.market.noData, { market: market.name })}
             help={d.prices.noDataHelp}

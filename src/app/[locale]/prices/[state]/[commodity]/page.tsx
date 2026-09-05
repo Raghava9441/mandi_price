@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { commoditiesInState, findCommodity, findState, getStates } from '@/lib/catalog';
+import { PRERENDER_PRICE_PAGES } from '@/lib/prerender';
 import { getSource } from '@/lib/mandi';
 import { summarise } from '@/lib/mandi/derive';
 import type { PriceRecord } from '@/lib/mandi/types';
@@ -28,33 +29,69 @@ interface Params {
 }
 
 /**
- * Pre-build the highest-value pages and render the long tail on demand.
+ * Pre-build a small set of the highest-value pages; render the long tail on demand.
  *
- * The full cross product is states x commodities - tens of thousands of pages, most of
- * which nobody searches for. Building the top slice keeps deploys fast while `revalidate`
- * plus `dynamicParams` still serves and caches everything else.
+ * Each prerendered page costs one upstream request at build time, and data.gov.in
+ * rate-limits hard enough that prerendering the catalog fails the build outright. The
+ * cap therefore stays low by default and `dynamicParams` + `revalidate` cover the rest.
+ * See `lib/prerender.ts`.
  */
 export function generateStaticParams() {
   const params: { locale: string; state: string; commodity: string }[] = [];
-  for (const state of getStates().slice(0, 12)) {
-    for (const commodity of commoditiesInState(state).slice(0, 20)) {
+  if (PRERENDER_PRICE_PAGES === 0) return params;
+
+  // Widest-traded crops in the biggest states first - the pages most likely to be hit
+  // before ISR has warmed anything up.
+  for (const state of getStates()) {
+    for (const commodity of commoditiesInState(state)) {
       params.push({ locale: 'en', state: state.slug, commodity: commodity.slug });
+      if (params.length >= PRERENDER_PRICE_PAGES) return params;
     }
   }
   return params;
 }
 
+/**
+ * An upstream failure degrades this page; it never takes the build or the request down.
+ *
+ * data.gov.in rate-limits and has outages, and an unhandled throw here fails the whole
+ * deploy over one bad minute on a government API. Returning `unavailable` instead lets
+ * the page render, and ISR replaces it with real prices on the next revalidation.
+ *
+ * Note this is reported as its own state rather than as an empty result: showing "no
+ * arrivals reported today" when the API is simply down would be telling the reader
+ * something false about their market.
+ */
 async function load(params: Params) {
   const state = findState(params.state);
   const commodity = findCommodity(params.commodity);
   if (!state || !commodity) return null;
 
-  const page = await getSource().getPrices({
-    state: state.api,
-    commodity: commodity.api,
-    limit: 500,
-  });
-  return { state, commodity, page };
+  try {
+    const page = await getSource().getPrices({
+      state: state.api,
+      commodity: commodity.api,
+      limit: 500,
+    });
+    return { state, commodity, page, unavailable: false };
+  } catch (error) {
+    console.error(
+      `[prices] upstream failed for ${state.api} / ${commodity.api}:`,
+      error instanceof Error ? error.message : error,
+    );
+    return {
+      state,
+      commodity,
+      page: {
+        records: [],
+        total: 0,
+        truncated: false,
+        updatedAt: null,
+        fetchedAt: new Date().toISOString(),
+      },
+      unavailable: true,
+    };
+  }
 }
 
 export async function generateMetadata({
@@ -100,7 +137,7 @@ export default async function CommodityStatePage({ params }: { params: Promise<P
 
   const data = await load(p);
   if (!data) notFound();
-  const { state, commodity, page } = data;
+  const { state, commodity, page, unavailable } = data;
   const s = summarise(page.records);
   const path = `/prices/${state.slug}/${commodity.slug}`;
 
@@ -207,7 +244,9 @@ export default async function CommodityStatePage({ params }: { params: Promise<P
       </section>
 
       <div className="mx-auto max-w-4xl px-4">
-        {s.quoted === 0 ? (
+        {unavailable ? (
+          <EmptyState title={d.common.unavailable} help={d.common.unavailableHelp} />
+        ) : s.quoted === 0 ? (
           <EmptyState
             title={t(d.prices.noData, { state: state.name, commodity: commodity.name })}
             help={d.prices.noDataHelp}

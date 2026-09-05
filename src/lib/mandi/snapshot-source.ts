@@ -28,7 +28,25 @@ export class SnapshotSource implements MandiSource {
   private async load() {
     if (this.cache) return this.cache;
 
-    const files = (await readdir(this.dir))
+    /*
+     * Snapshots are gitignored, so this directory does not exist on a deployment host.
+     * Setting MANDI_SOURCE=snapshot in a hosted environment is therefore always a
+     * misconfiguration - and a bare ENOENT for "scandir /vercel/path0/snapshots" gives
+     * no hint of that, so say it plainly.
+     */
+    let entries: string[];
+    try {
+      entries = await readdir(this.dir);
+    } catch {
+      throw new Error(
+        `MANDI_SOURCE=snapshot is set, but there is no snapshots directory at ${this.dir}. ` +
+          'Snapshots are local-only (gitignored), so this mode cannot work on a deployment ' +
+          'host: unset MANDI_SOURCE there so the app uses the live API, or run ' +
+          '`npm run snapshot` locally.',
+      );
+    }
+
+    const files = entries
       .filter((f) => f.endsWith('.ndjson.gz'))
       .sort()
       .reverse();

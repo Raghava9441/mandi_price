@@ -40,7 +40,9 @@
     "highestFirst": "Highest price first",
     "lowestFirst": "Lowest price first",
     "byName": "By name",
-    "mandis": "Mandis"
+    "mandis": "Mandis",
+    "unavailable": "Prices could not be loaded right now",
+    "unavailableHelp": "The Government of India data service is not responding. This page refreshes automatically, so please try again in a few minutes."
   },
   "home": {
     "heading": "What is your crop worth today?",
