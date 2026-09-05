@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local env
+.env.local
+.env
+
+# archived price history (large, regenerated)
+/snapshots
+
+# stray crash dumps from git-bash on Windows
+*.stackdump

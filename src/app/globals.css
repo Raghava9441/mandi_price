@@ -1,26 +1,242 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Design system.
+ *
+ * Built mobile-first for outdoor use on cheap Android phones: high contrast, large
+ * numerals, thumb-reachable controls, and a palette that stays legible in direct
+ * sunlight. The price itself is the hero of every screen - everything else is support.
+ */
+
+@theme {
+  /* Grain - the warm neutral the whole page sits on. */
+  --color-grain-50: oklch(0.985 0.005 95);
+  --color-grain-100: oklch(0.968 0.008 92);
+  --color-grain-200: oklch(0.925 0.012 90);
+  --color-grain-300: oklch(0.865 0.015 88);
+  --color-grain-400: oklch(0.7 0.018 86);
+  --color-grain-500: oklch(0.58 0.018 84);
+  --color-grain-600: oklch(0.47 0.016 82);
+  --color-grain-700: oklch(0.37 0.014 80);
+  --color-grain-800: oklch(0.26 0.012 78);
+  --color-grain-900: oklch(0.19 0.012 76);
+  --color-grain-950: oklch(0.135 0.01 74);
+
+  /* Crop - the primary green. Deep enough to hold white text at any size. */
+  --color-crop-50: oklch(0.965 0.03 155);
+  --color-crop-100: oklch(0.925 0.06 155);
+  --color-crop-200: oklch(0.865 0.1 155);
+  --color-crop-300: oklch(0.78 0.14 155);
+  --color-crop-400: oklch(0.7 0.16 156);
+  --color-crop-500: oklch(0.62 0.155 157);
+  --color-crop-600: oklch(0.53 0.14 158);
+  --color-crop-700: oklch(0.44 0.115 159);
+  --color-crop-800: oklch(0.36 0.09 160);
+  --color-crop-900: oklch(0.29 0.07 161);
+  --color-crop-950: oklch(0.19 0.05 162);
+
+  /* Harvest - the accent. Reserved for the best price and nothing else. */
+  --color-harvest-100: oklch(0.95 0.06 85);
+  --color-harvest-200: oklch(0.9 0.1 83);
+  --color-harvest-300: oklch(0.85 0.14 80);
+  --color-harvest-400: oklch(0.8 0.16 74);
+  --color-harvest-500: oklch(0.74 0.17 68);
+  --color-harvest-600: oklch(0.65 0.165 55);
+  --color-harvest-700: oklch(0.52 0.15 48);
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-telugu: var(--font-telugu-sans), var(--font-jakarta), sans-serif;
+
+  --radius-card: 1.25rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/*
+ * Semantic tokens. The complete light palette is defined on bare :root, then re-pointed
+ * for dark - no colour has its only definition inside a media query.
+ */
+:root {
+  color-scheme: light;
+  --bg: var(--color-grain-50);
+  --bg-raised: white;
+  --bg-sunken: var(--color-grain-100);
+  --border: var(--color-grain-200);
+  --border-strong: var(--color-grain-300);
+  --text: var(--color-grain-950);
+  --text-muted: var(--color-grain-600);
+  --text-faint: var(--color-grain-500);
+  --brand: var(--color-crop-700);
+  --brand-text: var(--color-crop-800);
+  --brand-soft: var(--color-crop-50);
+  --accent: var(--color-harvest-700);
+  --accent-soft: var(--color-harvest-100);
+  --shadow-card: 0 1px 2px oklch(0 0 0 / 0.04), 0 8px 24px -12px oklch(0.3 0.03 80 / 0.18);
+  --mesh-1: var(--color-crop-200);
+  --mesh-2: var(--color-harvest-200);
+  --mesh-3: var(--color-crop-100);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: var(--color-grain-950);
+    --bg-raised: var(--color-grain-900);
+    --bg-sunken: oklch(0.165 0.012 75);
+    --border: oklch(0.28 0.012 78);
+    --border-strong: oklch(0.36 0.014 78);
+    --text: var(--color-grain-50);
+    --text-muted: var(--color-grain-400);
+    --text-faint: var(--color-grain-500);
+    --brand: var(--color-crop-400);
+    --brand-text: var(--color-crop-300);
+    --brand-soft: oklch(0.26 0.05 158);
+    --accent: var(--color-harvest-400);
+    --accent-soft: oklch(0.28 0.06 60);
+    --shadow-card: 0 1px 2px oklch(0 0 0 / 0.3), 0 8px 24px -12px oklch(0 0 0 / 0.6);
+    --mesh-1: oklch(0.32 0.08 158);
+    --mesh-2: oklch(0.3 0.07 60);
+    --mesh-3: oklch(0.24 0.05 160);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: var(--color-grain-950);
+  --bg-raised: var(--color-grain-900);
+  --bg-sunken: oklch(0.165 0.012 75);
+  --border: oklch(0.28 0.012 78);
+  --border-strong: oklch(0.36 0.014 78);
+  --text: var(--color-grain-50);
+  --text-muted: var(--color-grain-400);
+  --text-faint: var(--color-grain-500);
+  --brand: var(--color-crop-400);
+  --brand-text: var(--color-crop-300);
+  --brand-soft: oklch(0.26 0.05 158);
+  --accent: var(--color-harvest-400);
+  --accent-soft: oklch(0.28 0.06 60);
+  --shadow-card: 0 1px 2px oklch(0 0 0 / 0.3), 0 8px 24px -12px oklch(0 0 0 / 0.6);
+  --mesh-1: oklch(0.32 0.08 158);
+  --mesh-2: oklch(0.3 0.07 60);
+  --mesh-3: oklch(0.24 0.05 160);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    /* 16px floor: smaller is unreadable on a phone held at arm's length in a field. */
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  [lang='te'] body,
+  .lang-te {
+    font-family: var(--font-telugu);
+    /* Telugu glyphs carry more vertical detail; extra leading keeps them legible. */
+    line-height: 1.75;
+  }
+
+  /* Prices must align digit-for-digit down a column and never reflow as they change. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    background-color: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-link {
+    transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  @media (hover: hover) {
+    .card-link:hover {
+      transform: translateY(-2px);
+      border-color: var(--brand);
+      box-shadow: 0 2px 4px oklch(0 0 0 / 0.05), 0 16px 32px -16px oklch(0.3 0.05 150 / 0.35);
+    }
+  }
+
+  .card-link:active {
+    transform: translateY(0) scale(0.995);
+  }
+
+  /* Every tap target clears the 44px minimum without per-element padding maths. */
+  .tap {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-mesh {
+    background-image:
+      radial-gradient(ellipse 80% 60% at 12% 0%, var(--mesh-1), transparent 62%),
+      radial-gradient(ellipse 70% 55% at 96% 8%, var(--mesh-2), transparent 58%),
+      radial-gradient(ellipse 95% 70% at 50% 105%, var(--mesh-3), transparent 62%);
+  }
+
+  /* Wide tables scroll inside themselves; the page body never scrolls sideways. */
+  .scroll-x {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    border-radius: 999px;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: rise 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }

@@ -1,0 +1,101 @@
+{
+  "site": {
+    "name": "Mandi Rates",
+    "tagline": "Today's mandi prices, from every APMC market in India",
+    "description": "Live daily mandi prices for every commodity and market in India, from the Government of India's Agmarknet feed. Find the mandi paying the most for your crop today."
+  },
+  "nav": {
+    "home": "Home",
+    "states": "States",
+    "commodities": "Crops",
+    "changeLanguage": "Language"
+  },
+  "common": {
+    "perQuintal": "per quintal",
+    "perKg": "per kg",
+    "perBag": "per 50 kg bag",
+    "quintal": "Quintal",
+    "kg": "Kg",
+    "bag": "50 kg bag",
+    "unit": "Show price per",
+    "modalPrice": "Modal price",
+    "minPrice": "Min",
+    "maxPrice": "Max",
+    "market": "Mandi",
+    "district": "District",
+    "state": "State",
+    "commodity": "Crop",
+    "variety": "Variety",
+    "grade": "Grade",
+    "notReported": "Not reported",
+    "noArrivalsToday": "No arrivals reported today",
+    "updated": "Updated {time} IST",
+    "asOf": "Prices as of {date}",
+    "source": "Source: Agmarknet / data.gov.in",
+    "viewAll": "View all",
+    "back": "Back",
+    "search": "Search a crop or mandi",
+    "loading": "Loading prices",
+    "sortBy": "Sort by",
+    "highestFirst": "Highest price first",
+    "lowestFirst": "Lowest price first",
+    "byName": "By name",
+    "mandis": "Mandis"
+  },
+  "home": {
+    "heading": "What is your crop worth today?",
+    "sub": "Compare today's rates across {markets} mandis, so you know which one pays the most before you load the tractor.",
+    "chooseState": "Choose your state",
+    "popularCrops": "Widely traded crops today",
+    "browseStates": "Browse by state",
+    "noCatalog": "Price catalogue is still being built. Run `npm run catalog` to populate it."
+  },
+  "prices": {
+    "title": "{commodity} price today in {state}",
+    "heading": "{commodity} rates in {state}",
+    "bestToday": "Highest paying mandi today",
+    "lowestToday": "Lowest today",
+    "median": "Typical rate",
+    "spread": "Difference between the best and worst mandi",
+    "spreadHelp": "Selling at {best} instead of {worst} is worth {amount} more per quintal — a {pct}% difference.",
+    "reporting": "{markets} mandis reported today",
+    "noData": "No mandi in {state} reported {commodity} prices today.",
+    "noDataHelp": "Prices only appear on days a mandi trades and reports. Check back after 5 PM IST, or look at a neighbouring state.",
+    "tableCaption": "{commodity} prices by mandi in {state}, {date}",
+    "otherCrops": "Other crops in {state}",
+    "otherStates": "{commodity} in other states",
+    "summary": "On {date}, {commodity} traded in {markets} mandis across {districts} districts of {state}. The modal price ranged from {low} to {high} per quintal, with a typical rate of {median}. The highest rate was at {bestMarket} in {bestDistrict} district.",
+    "summaryOne": "On {date}, {commodity} was reported by a single mandi in {state}: {bestMarket} in {bestDistrict} district, at a modal price of {high} per quintal."
+  },
+  "market": {
+    "title": "{market} mandi prices today",
+    "heading": "{market}",
+    "subheading": "{district} district, {state}",
+    "cropsToday": "Crops traded today",
+    "noData": "{market} has not reported any arrivals today.",
+    "summary": "On {date}, {market} in {district} district of {state} reported prices for {commodities} crops.",
+    "summaryOne": "On {date}, {market} in {district} district of {state} reported a price for one crop."
+  },
+  "state": {
+    "title": "Mandi prices today in {state}",
+    "heading": "Mandi rates in {state}",
+    "districts": "Districts",
+    "crops": "Crops traded in {state}",
+    "summary": "{state} has {markets} mandis across {districts} districts reporting daily prices for {commodities} crops."
+  },
+  "faq": {
+    "heading": "Common questions",
+    "whatIsModal": "What is the modal price?",
+    "whatIsModalAnswer": "The modal price is the rate at which most of the day's volume actually traded. It is a more realistic guide to what you will be paid than the maximum price, which usually reflects a small quantity of the very best grade.",
+    "howOften": "How often are these rates updated?",
+    "howOftenAnswer": "The Government of India's feed refreshes roughly once an hour on trading days. This page shows the latest published figures along with the time they were read.",
+    "whyMissing": "Why is my mandi missing?",
+    "whyMissingAnswer": "A mandi only appears on days it trades and submits a report. Sunday and holiday closures, and delayed reporting, both show up as missing rows rather than as zero prices.",
+    "unitQuestion": "Are prices per kg or per quintal?",
+    "unitAnswer": "The official feed publishes rupees per quintal (100 kg). Use the unit switch to see the same rate per kg or per 50 kg bag."
+  },
+  "footer": {
+    "disclaimer": "Prices are published by the Directorate of Marketing & Inspection (Agmarknet) via data.gov.in and are shown as received. Verify with your mandi before trading.",
+    "builtWith": "Data from data.gov.in"
+  }
+}

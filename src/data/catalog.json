@@ -1,0 +1,2894 @@
+{
+  "generatedAt": "2026-09-05T09:57:09.279Z",
+  "sourceUpdatedAt": "2026-09-05T09:00:45.000Z",
+  "states": [
+    {
+      "slug": "andhra-pradesh",
+      "api": "Andhra Pradesh",
+      "name": "Andhra Pradesh",
+      "districts": [
+        {
+          "slug": "alluri-sitharama-raju",
+          "api": "Alluri Sitharama Raju",
+          "name": "Alluri Sitharama Raju",
+          "markets": [
+            {
+              "slug": "araku-valley-apmc",
+              "api": "Araku Valley APMC",
+              "name": "Araku Valley APMC",
+              "districtSlug": "alluri-sitharama-raju"
+            },
+            {
+              "slug": "chintapally-apmc",
+              "api": "Chintapally APMC",
+              "name": "Chintapally APMC",
+              "districtSlug": "alluri-sitharama-raju"
+            },
+            {
+              "slug": "paderu-apmc",
+              "api": "Paderu APMC",
+              "name": "Paderu APMC",
+              "districtSlug": "alluri-sitharama-raju"
+            }
+          ]
+        },
+        {
+          "slug": "anakapally",
+          "api": "Anakapally",
+          "name": "Anakapally",
+          "markets": [
+            {
+              "slug": "anakapally-apmc",
+              "api": "Anakapally APMC",
+              "name": "Anakapally APMC",
+              "districtSlug": "anakapally"
+            },
+            {
+              "slug": "chodavaram-apmc",
+              "api": "Chodavaram APMC",
+              "name": "Chodavaram APMC",
+              "districtSlug": "anakapally"
+            },
+            {
+              "slug": "madugula-apmc",
+              "api": "Madugula APMC",
+              "name": "Madugula APMC",
+              "districtSlug": "anakapally"
+            },
+            {
+              "slug": "payakaraopeta-apmc",
+              "api": "Payakaraopeta APMC",
+              "name": "Payakaraopeta APMC",
+              "districtSlug": "anakapally"
+            },
+            {
+              "slug": "yellamanchili-apmc",
+              "api": "Yellamanchili APMC",
+              "name": "Yellamanchili APMC",
+              "districtSlug": "anakapally"
+            }
+          ]
+        },
+        {
+          "slug": "ananthapuramu",
+          "api": "Ananthapuramu",
+          "name": "Ananthapuramu",
+          "markets": [
+            {
+              "slug": "anantapur-apmc",
+              "api": "Anantapur APMC",
+              "name": "Anantapur APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "gooti-apmc",
+              "api": "Gooti APMC",
+              "name": "Gooti APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "guntakal-apmc",
+              "api": "Guntakal APMC",
+              "name": "Guntakal APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "kalyandurg-apmc",
+              "api": "Kalyandurg APMC",
+              "name": "Kalyandurg APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "rapthadu-apmc",
+              "api": "Rapthadu APMC",
+              "name": "Rapthadu APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "rayadurg-apmc",
+              "api": "RAYADURG APMC",
+              "name": "RAYADURG APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "singanamala-apmc",
+              "api": "Singanamala APMC",
+              "name": "Singanamala APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "tadipatri-apmc",
+              "api": "Tadipatri APMC",
+              "name": "Tadipatri APMC",
+              "districtSlug": "ananthapuramu"
+            },
+            {
+              "slug": "urvakonda-apmc",
+              "api": "Urvakonda APMC",
+              "name": "Urvakonda APMC",
+              "districtSlug": "ananthapuramu"
+            }
+          ]
+        },
+        {
+          "slug": "annamayya",
+          "api": "Annamayya",
+          "name": "Annamayya",
+          "markets": [
+            {
+              "slug": "b-kothakota-h-q-angallu",
+              "api": "B.Kothakota H/Q Angallu",
+              "name": "B.Kothakota H/Q Angallu",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "guramkonda-sub-yard-of-amc-valmikipuram",
+              "api": "Guramkonda Sub-yard of AMC Valmikipuram",
+              "name": "Guramkonda Sub-yard of AMC Valmikipuram",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "lakkireddipally-apmc",
+              "api": "Lakkireddipally APMC",
+              "name": "Lakkireddipally APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "madanapalli-apmc",
+              "api": "Madanapalli APMC",
+              "name": "Madanapalli APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "mulakalacheruvu-apmc",
+              "api": "Mulakalacheruvu APMC",
+              "name": "Mulakalacheruvu APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "piler-apmc",
+              "api": "Piler APMC",
+              "name": "Piler APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "punganur-apmc",
+              "api": "Punganur APMC",
+              "name": "Punganur APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "rayachoti-apmc",
+              "api": "Rayachoti APMC",
+              "name": "Rayachoti APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "somala-apmc",
+              "api": "Somala APMC",
+              "name": "Somala APMC",
+              "districtSlug": "annamayya"
+            },
+            {
+              "slug": "valmikipuram-apmc",
+              "api": "Valmikipuram APMC",
+              "name": "Valmikipuram APMC",
+              "districtSlug": "annamayya"
+            }
+          ]
+        },
+        {
+          "slug": "bapatla",
+          "api": "Bapatla",
+          "name": "Bapatla",
+          "markets": [
+            {
+              "slug": "bapatla-apmc",
+              "api": "Bapatla APMC",
+              "name": "Bapatla APMC",
+              "districtSlug": "bapatla"
+            },
+            {
+              "slug": "chirala-apmc",
+              "api": "Chirala APMC",
+              "name": "Chirala APMC",
+              "districtSlug": "bapatla"
+            },
+            {
+              "slug": "kuchinapudi-apmc",
+              "api": "Kuchinapudi APMC",
+              "name": "Kuchinapudi APMC",
+              "districtSlug": "bapatla"
+            },
+            {
+              "slug": "parchur-apmc",
+              "api": "Parchur APMC",
+              "name": "Parchur APMC",
+              "districtSlug": "bapatla"
+            },
+            {
+              "slug": "repalli-apmc",
+              "api": "Repalli APMC",
+              "name": "Repalli APMC",
+              "districtSlug": "bapatla"
+            }
+          ]
+        },
+        {
+          "slug": "chittor",
+          "api": "Chittor",
+          "name": "Chittor",
+          "markets": [
+            {
+              "slug": "bangarupalyam-apmc",
+              "api": "Bangarupalyam APMC",
+              "name": "Bangarupalyam APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "chittoor-apmc",
+              "api": "Chittoor APMC",
+              "name": "Chittoor APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "kuppam-apmc",
+              "api": "Kuppam APMC",
+              "name": "Kuppam APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "nagari-apmc",
+              "api": "Nagari APMC",
+              "name": "Nagari APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "palamaner-apmc",
+              "api": "Palamaner APMC",
+              "name": "Palamaner APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "penumuru-apmc",
+              "api": "Penumuru APMC",
+              "name": "Penumuru APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "rompicherla-apmc",
+              "api": "Rompicherla APMC",
+              "name": "Rompicherla APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "s-r-puram-apmc",
+              "api": "S.R.Puram APMC",
+              "name": "S.R.Puram APMC",
+              "districtSlug": "chittor"
+            },
+            {
+              "slug": "v-kota-sub-yard-of-amc-palamaneru",
+              "api": "V. Kota Sub-yard of AMC Palamaneru",
+              "name": "V. Kota Sub-yard of AMC Palamaneru",
+              "districtSlug": "chittor"
+            }
+          ]
+        },
+        {
+          "slug": "dr-b-r-a-konaseema",
+          "api": "Dr.B.R.A.Konaseema",
+          "name": "Dr.B.R.A.Konaseema",
+          "markets": [
+            {
+              "slug": "alamuru-apmc",
+              "api": "Alamuru APMC",
+              "name": "Alamuru APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "amalapuram-apmc",
+              "api": "Amalapuram APMC",
+              "name": "Amalapuram APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "ambajipeta-apmc",
+              "api": "Ambajipeta APMC",
+              "name": "Ambajipeta APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "mummidivaram-apmc",
+              "api": "Mummidivaram APMC",
+              "name": "Mummidivaram APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "nagaram-apmc",
+              "api": "Nagaram APMC",
+              "name": "Nagaram APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "ramachandrapuram-apmc",
+              "api": "Ramachandrapuram APMC",
+              "name": "Ramachandrapuram APMC",
+              "districtSlug": "dr-b-r-a-konaseema"
+            },
+            {
+              "slug": "ravulapalem-kothapeta-apmc",
+              "api": "Ravulapalem (Kothapeta APMC)",
+              "name": "Ravulapalem (Kothapeta APMC)",
+              "districtSlug": "dr-b-r-a-konaseema"
+            }
+          ]
+        },
+        {
+          "slug": "east-godavari",
+          "api": "East Godavari",
+          "name": "East Godavari",
+          "markets": [
+            {
+              "slug": "anaparthy-apmc",
+              "api": "Anaparthy APMC",
+              "name": "Anaparthy APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "gopalapuram-apmc",
+              "api": "Gopalapuram APMC",
+              "name": "Gopalapuram APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "kovvur-apmc",
+              "api": "Kovvur APMC",
+              "name": "Kovvur APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "mandapeta-apmc",
+              "api": "Mandapeta APMC",
+              "name": "Mandapeta APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "nidadavolu-apmc",
+              "api": "Nidadavolu APMC",
+              "name": "Nidadavolu APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "rajahmundry-apmc",
+              "api": "Rajahmundry APMC",
+              "name": "Rajahmundry APMC",
+              "districtSlug": "east-godavari"
+            },
+            {
+              "slug": "rajanagaram-apmc",
+              "api": "Rajanagaram APMC",
+              "name": "Rajanagaram APMC",
+              "districtSlug": "east-godavari"
+            }
+          ]
+        },
+        {
+          "slug": "eluru",
+          "api": "Eluru",
+          "name": "Eluru",
+          "markets": [
+            {
+              "slug": "bhimadole-apmc",
+              "api": "Bhimadole APMC",
+              "name": "Bhimadole APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "chintalapudi-apmc",
+              "api": "Chintalapudi APMC",
+              "name": "Chintalapudi APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "denduluru-apmc",
+              "api": "Denduluru APMC",
+              "name": "Denduluru APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "eluru-apmc",
+              "api": "Eluru APMC",
+              "name": "Eluru APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "kaikaluru-apmc",
+              "api": "Kaikaluru APMC",
+              "name": "Kaikaluru APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "kalidindi-apmc",
+              "api": "Kalidindi APMC",
+              "name": "Kalidindi APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "nuzvid-apmc",
+              "api": "Nuzvid APMC",
+              "name": "Nuzvid APMC",
+              "districtSlug": "eluru"
+            },
+            {
+              "slug": "polavaram-apmc",
+              "api": "Polavaram APMC",
+              "name": "Polavaram APMC",
+              "districtSlug": "eluru"
+            }
+          ]
+        },
+        {
+          "slug": "guntur",
+          "api": "Guntur",
+          "name": "Guntur",
+          "markets": [
+            {
+              "slug": "mangalagiri-apmc",
+              "api": "Mangalagiri APMC",
+              "name": "Mangalagiri APMC",
+              "districtSlug": "guntur"
+            },
+            {
+              "slug": "phirangipuram-apmc",
+              "api": "Phirangipuram APMC",
+              "name": "Phirangipuram APMC",
+              "districtSlug": "guntur"
+            },
+            {
+              "slug": "ponnur-apmc",
+              "api": "Ponnur APMC",
+              "name": "Ponnur APMC",
+              "districtSlug": "guntur"
+            },
+            {
+              "slug": "prathipadu-apmc",
+              "api": "Prathipadu APMC",
+              "name": "Prathipadu APMC",
+              "districtSlug": "guntur"
+            }
+          ]
+        },
+        {
+          "slug": "kakinada",
+          "api": "Kakinada",
+          "name": "Kakinada",
+          "markets": [
+            {
+              "slug": "jaggampet-apmc",
+              "api": "Jaggampet APMC",
+              "name": "Jaggampet APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "kakinada-urban-apmc",
+              "api": "Kakinada (Urban) APMC",
+              "name": "Kakinada (Urban) APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "karapa-apmc",
+              "api": "Karapa APMC",
+              "name": "Karapa APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "peddapuram-apmc",
+              "api": "Peddapuram APMC",
+              "name": "Peddapuram APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "pithapuram-apmc",
+              "api": "Pithapuram APMC",
+              "name": "Pithapuram APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "prattipadu-apmc",
+              "api": "Prattipadu APMC",
+              "name": "Prattipadu APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "samalkot-apmc",
+              "api": "Samalkot APMC",
+              "name": "Samalkot APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "sampara-kakinada-rural-apmc",
+              "api": "Sampara (Kakinada Rural) APMC",
+              "name": "Sampara (Kakinada Rural) APMC",
+              "districtSlug": "kakinada"
+            },
+            {
+              "slug": "tuni-apmc",
+              "api": "Tuni APMC",
+              "name": "Tuni APMC",
+              "districtSlug": "kakinada"
+            }
+          ]
+        },
+        {
+          "slug": "krishna",
+          "api": "Krishna",
+          "name": "Krishna",
+          "markets": [
+            {
+              "slug": "divi-hq-avanigadda-apmc",
+              "api": "Divi (HQ-Avanigadda) APMC",
+              "name": "Divi (HQ-Avanigadda) APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "gannavaram-apmc",
+              "api": "Gannavaram APMC",
+              "name": "Gannavaram APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "ghantsala-hq-kodali-apmc",
+              "api": "Ghantsala (HQ-Kodali) APMC",
+              "name": "Ghantsala (HQ-Kodali) APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "gudiwada-apmc",
+              "api": "Gudiwada APMC",
+              "name": "Gudiwada APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "gudlavalleru-apmc",
+              "api": "Gudlavalleru APMC",
+              "name": "Gudlavalleru APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "machilipatnam-apmc",
+              "api": "Machilipatnam APMC",
+              "name": "Machilipatnam APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "malleswaram-hq-bantumili-apmc",
+              "api": "Malleswaram (HQ-Bantumili) APMC",
+              "name": "Malleswaram (HQ-Bantumili) APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "movva-hq-kuchipudi-apmc",
+              "api": "Movva (HQ-Kuchipudi) APMC",
+              "name": "Movva (HQ-Kuchipudi) APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "pamarru-apmc",
+              "api": "Pamarru APMC",
+              "name": "Pamarru APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "pedana-apmc",
+              "api": "Pedana APMC",
+              "name": "Pedana APMC",
+              "districtSlug": "krishna"
+            },
+            {
+              "slug": "vuyyur-apmc",
+              "api": "Vuyyur APMC",
+              "name": "Vuyyur APMC",
+              "districtSlug": "krishna"
+            }
+          ]
+        },
+        {
+          "slug": "kurnool",
+          "api": "Kurnool",
+          "name": "Kurnool",
+          "markets": [
+            {
+              "slug": "alur-apmc",
+              "api": "Alur APMC",
+              "name": "Alur APMC",
+              "districtSlug": "kurnool"
+            },
+            {
+              "slug": "kurnool-apmc",
+              "api": "Kurnool APMC",
+              "name": "Kurnool APMC",
+              "districtSlug": "kurnool"
+            },
+            {
+              "slug": "pattikonda-apmc",
+              "api": "Pattikonda APMC",
+              "name": "Pattikonda APMC",
+              "districtSlug": "kurnool"
+            }
+          ]
+        },
+        {
+          "slug": "markapuram",
+          "api": "Markapuram",
+          "name": "Markapuram",
+          "markets": [
+            {
+              "slug": "cumbum-apmc",
+              "api": "Cumbum APMC",
+              "name": "Cumbum APMC",
+              "districtSlug": "markapuram"
+            },
+            {
+              "slug": "giddalur-apmc",
+              "api": "Giddalur APMC",
+              "name": "Giddalur APMC",
+              "districtSlug": "markapuram"
+            },
+            {
+              "slug": "kanigiri-apmc",
+              "api": "Kanigiri APMC",
+              "name": "Kanigiri APMC",
+              "districtSlug": "markapuram"
+            },
+            {
+              "slug": "markapur-apmc",
+              "api": "Markapur APMC",
+              "name": "Markapur APMC",
+              "districtSlug": "markapuram"
+            },
+            {
+              "slug": "podili-apmc",
+              "api": "Podili APMC",
+              "name": "Podili APMC",
+              "districtSlug": "markapuram"
+            },
+            {
+              "slug": "yerragondapalem-apmc",
+              "api": "Yerragondapalem APMC",
+              "name": "Yerragondapalem APMC",
+              "districtSlug": "markapuram"
+            }
+          ]
+        },
+        {
+          "slug": "nandyal",
+          "api": "Nandyal",
+          "name": "Nandyal",
+          "markets": [
+            {
+              "slug": "allagadda-apmc",
+              "api": "Allagadda APMC",
+              "name": "Allagadda APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "atmakur-nandyal-district-apmc",
+              "api": "Atmakur (Nandyal District) APMC",
+              "name": "Atmakur (Nandyal District) APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "banaganapalli-apmc",
+              "api": "Banaganapalli APMC",
+              "name": "Banaganapalli APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "dhone-apmc",
+              "api": "Dhone APMC",
+              "name": "Dhone APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "koilkunta-apmc",
+              "api": "Koilkunta APMC",
+              "name": "Koilkunta APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "nandikotkur-apmc",
+              "api": "Nandikotkur APMC",
+              "name": "Nandikotkur APMC",
+              "districtSlug": "nandyal"
+            },
+            {
+              "slug": "nandyal-apmc",
+              "api": "Nandyal APMC",
+              "name": "Nandyal APMC",
+              "districtSlug": "nandyal"
+            }
+          ]
+        },
+        {
+          "slug": "ntr",
+          "api": "NTR",
+          "name": "NTR",
+          "markets": [
+            {
+              "slug": "jaggayyapeta-apmc",
+              "api": "Jaggayyapeta APMC",
+              "name": "Jaggayyapeta APMC",
+              "districtSlug": "ntr"
+            },
+            {
+              "slug": "kanchekacherla-apmc",
+              "api": "Kanchekacherla APMC",
+              "name": "Kanchekacherla APMC",
+              "districtSlug": "ntr"
+            },
+            {
+              "slug": "mylavaram-apmc",
+              "api": "Mylavaram APMC",
+              "name": "Mylavaram APMC",
+              "districtSlug": "ntr"
+            },
+            {
+              "slug": "nandigama-apmc",
+              "api": "Nandigama APMC",
+              "name": "Nandigama APMC",
+              "districtSlug": "ntr"
+            },
+            {
+              "slug": "tiruvuru-apmc",
+              "api": "Tiruvuru APMC",
+              "name": "Tiruvuru APMC",
+              "districtSlug": "ntr"
+            },
+            {
+              "slug": "vijayawada-apmc",
+              "api": "Vijayawada APMC",
+              "name": "Vijayawada APMC",
+              "districtSlug": "ntr"
+            }
+          ]
+        },
+        {
+          "slug": "palnadu",
+          "api": "Palnadu",
+          "name": "Palnadu",
+          "markets": [
+            {
+              "slug": "durgi-apmc",
+              "api": "Durgi APMC",
+              "name": "Durgi APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "gurazala-apmc",
+              "api": "Gurazala APMC",
+              "name": "Gurazala APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "ipur-apmc",
+              "api": "Ipur APMC",
+              "name": "Ipur APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "krosuru-apmc",
+              "api": "Krosuru APMC",
+              "name": "Krosuru APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "macharla-apmc",
+              "api": "Macharla APMC",
+              "name": "Macharla APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "narasaraopet-apmc",
+              "api": "Narasaraopet APMC",
+              "name": "Narasaraopet APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "pidugurala-apmc",
+              "api": "Pidugurala APMC",
+              "name": "Pidugurala APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "rajupalem-apmc",
+              "api": "Rajupalem APMC",
+              "name": "Rajupalem APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "rompicherla-apmc-2",
+              "api": "Rompicherla APMC",
+              "name": "Rompicherla APMC",
+              "districtSlug": "palnadu"
+            },
+            {
+              "slug": "sattenapalli-apmc",
+              "api": "Sattenapalli APMC",
+              "name": "Sattenapalli APMC",
+              "districtSlug": "palnadu"
+            }
+          ]
+        },
+        {
+          "slug": "parvathipuram-manyam",
+          "api": "Parvathipuram Manyam",
+          "name": "Parvathipuram Manyam",
+          "markets": [
+            {
+              "slug": "kurupam-apmc",
+              "api": "Kurupam APMC",
+              "name": "Kurupam APMC",
+              "districtSlug": "parvathipuram-manyam"
+            },
+            {
+              "slug": "palakonda-apmc",
+              "api": "Palakonda APMC",
+              "name": "Palakonda APMC",
+              "districtSlug": "parvathipuram-manyam"
+            },
+            {
+              "slug": "parvathipuram-apmc",
+              "api": "Parvathipuram APMC",
+              "name": "Parvathipuram APMC",
+              "districtSlug": "parvathipuram-manyam"
+            },
+            {
+              "slug": "saluru-apmc",
+              "api": "Saluru APMC",
+              "name": "Saluru APMC",
+              "districtSlug": "parvathipuram-manyam"
+            }
+          ]
+        },
+        {
+          "slug": "polavaram",
+          "api": "Polavaram",
+          "name": "Polavaram",
+          "markets": [
+            {
+              "slug": "rampachodvaram-apmc",
+              "api": "Rampachodvaram APMC",
+              "name": "Rampachodvaram APMC",
+              "districtSlug": "polavaram"
+            }
+          ]
+        },
+        {
+          "slug": "prakasam",
+          "api": "Prakasam",
+          "name": "Prakasam",
+          "markets": [
+            {
+              "slug": "addanki-apmc",
+              "api": "Addanki APMC",
+              "name": "Addanki APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "darsi-apmc",
+              "api": "Darsi APMC",
+              "name": "Darsi APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "kandukur-apmc",
+              "api": "Kandukur APMC",
+              "name": "Kandukur APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "kondapi-apmc",
+              "api": "Kondapi APMC",
+              "name": "Kondapi APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "maddipadu-apmc",
+              "api": "Maddipadu APMC",
+              "name": "Maddipadu APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "ongole-apmc",
+              "api": "Ongole APMC",
+              "name": "Ongole APMC",
+              "districtSlug": "prakasam"
+            },
+            {
+              "slug": "santhamaguluru-apmc",
+              "api": "Santhamaguluru APMC",
+              "name": "Santhamaguluru APMC",
+              "districtSlug": "prakasam"
+            }
+          ]
+        },
+        {
+          "slug": "spsr-nellore",
+          "api": "SPSR Nellore",
+          "name": "SPSR Nellore",
+          "markets": [
+            {
+              "slug": "atmakur-spsr-nellore-district-apmc",
+              "api": "Atmakur (SPSR Nellore District) APMC",
+              "name": "Atmakur (SPSR Nellore District) APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "gudur-apmc",
+              "api": "Gudur APMC",
+              "name": "Gudur APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "kavali-apmc",
+              "api": "Kavali APMC",
+              "name": "Kavali APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "kovur-apmc",
+              "api": "Kovur APMC",
+              "name": "Kovur APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "nellore-apmc",
+              "api": "Nellore APMC",
+              "name": "Nellore APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "rapur-apmc",
+              "api": "Rapur APMC",
+              "name": "Rapur APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "sarvepalli-apmc",
+              "api": "Sarvepalli APMC",
+              "name": "Sarvepalli APMC",
+              "districtSlug": "spsr-nellore"
+            },
+            {
+              "slug": "udayagiri-apmc",
+              "api": "Udayagiri APMC",
+              "name": "Udayagiri APMC",
+              "districtSlug": "spsr-nellore"
+            }
+          ]
+        },
+        {
+          "slug": "sri-sathya-sai",
+          "api": "Sri Sathya Sai",
+          "name": "Sri Sathya Sai",
+          "markets": [
+            {
+              "slug": "dharmavaram-apmc",
+              "api": "Dharmavaram APMC",
+              "name": "Dharmavaram APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "gorantla-apmc",
+              "api": "Gorantla  APMC",
+              "name": "Gorantla APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "hindupur-apmc",
+              "api": "Hindupur APMC",
+              "name": "Hindupur APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "kadiri-apmc",
+              "api": "Kadiri APMC",
+              "name": "Kadiri APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "madakasira-apmc",
+              "api": "Madakasira APMC",
+              "name": "Madakasira APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "penukonda-apmc",
+              "api": "Penukonda APMC",
+              "name": "Penukonda APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "puttaparthi-apmc",
+              "api": "Puttaparthi  APMC",
+              "name": "Puttaparthi APMC",
+              "districtSlug": "sri-sathya-sai"
+            },
+            {
+              "slug": "tenakallu-apmc",
+              "api": "Tenakallu APMC",
+              "name": "Tenakallu APMC",
+              "districtSlug": "sri-sathya-sai"
+            }
+          ]
+        },
+        {
+          "slug": "srikakulam",
+          "api": "Srikakulam",
+          "name": "Srikakulam",
+          "markets": [
+            {
+              "slug": "amadalavalasa-apmc",
+              "api": "Amadalavalasa APMC",
+              "name": "Amadalavalasa APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "etcherla-apmc",
+              "api": "Etcherla APMC",
+              "name": "Etcherla APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "hiramandalam-apmc",
+              "api": "Hiramandalam APMC",
+              "name": "Hiramandalam APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "ichapuram-apmc",
+              "api": "Ichapuram APMC",
+              "name": "Ichapuram APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "jalumuru-apmc",
+              "api": "Jalumuru APMC",
+              "name": "Jalumuru APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "kanchili-apmc",
+              "api": "Kanchili APMC",
+              "name": "Kanchili APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "kothabommali-apmc",
+              "api": "Kothabommali APMC",
+              "name": "Kothabommali APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "narasannapet-apmc",
+              "api": "Narasannapet APMC",
+              "name": "Narasannapet APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "palasa-apmc",
+              "api": "Palasa APMC",
+              "name": "Palasa APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "pathapatnam-apmc",
+              "api": "Pathapatnam APMC",
+              "name": "Pathapatnam APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "ponduru-apmc",
+              "api": "Ponduru APMC",
+              "name": "Ponduru APMC",
+              "districtSlug": "srikakulam"
+            },
+            {
+              "slug": "srikakulam-apmc",
+              "api": "Srikakulam APMC",
+              "name": "Srikakulam APMC",
+              "districtSlug": "srikakulam"
+            }
+          ]
+        },
+        {
+          "slug": "tirupathi",
+          "api": "Tirupathi",
+          "name": "Tirupathi",
+          "markets": [
+            {
+              "slug": "b-n-kandriga-apmc",
+              "api": "B.N.Kandriga APMC",
+              "name": "B.N.Kandriga APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "chandragiri-apmc",
+              "api": "Chandragiri APMC",
+              "name": "Chandragiri APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "nagalapuram-apmc",
+              "api": "Nagalapuram APMC",
+              "name": "Nagalapuram APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "naidupet-apmc",
+              "api": "Naidupet APMC",
+              "name": "Naidupet APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "pakala-apmc",
+              "api": "Pakala APMC",
+              "name": "Pakala APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "puttur-apmc",
+              "api": "Puttur APMC",
+              "name": "Puttur APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "railway-koduru-apmc",
+              "api": "Railway Koduru APMC",
+              "name": "Railway Koduru APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "srikalahasti-apmc",
+              "api": "Srikalahasti APMC",
+              "name": "Srikalahasti APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "sullurpet-apmc",
+              "api": "Sullurpet APMC",
+              "name": "Sullurpet APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "thiruchanur-apmc",
+              "api": "Thiruchanur APMC",
+              "name": "Thiruchanur APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "vakadu-apmc",
+              "api": "Vakadu APMC",
+              "name": "Vakadu APMC",
+              "districtSlug": "tirupathi"
+            },
+            {
+              "slug": "venkatagiri-apmc",
+              "api": "Venkatagiri APMC",
+              "name": "Venkatagiri APMC",
+              "districtSlug": "tirupathi"
+            }
+          ]
+        },
+        {
+          "slug": "vijayanagaram",
+          "api": "Vijayanagaram",
+          "name": "Vijayanagaram",
+          "markets": [
+            {
+              "slug": "bobbili-apmc",
+              "api": "Bobbili APMC",
+              "name": "Bobbili APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "chipurupalli-apmc",
+              "api": "Chipurupalli APMC",
+              "name": "Chipurupalli APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "gajapathinagaram-apmc",
+              "api": "Gajapathinagaram APMC",
+              "name": "Gajapathinagaram APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "kothavalasa-apmc",
+              "api": "Kothavalasa APMC",
+              "name": "Kothavalasa APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "merakamudidam-apmc",
+              "api": "Merakamudidam APMC",
+              "name": "Merakamudidam APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "pusapatirega-apmc",
+              "api": "Pusapatirega APMC",
+              "name": "Pusapatirega APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "rajam-apmc",
+              "api": "Rajam APMC",
+              "name": "Rajam APMC",
+              "districtSlug": "vijayanagaram"
+            },
+            {
+              "slug": "vijayanagaram-apmc",
+              "api": "Vijayanagaram APMC",
+              "name": "Vijayanagaram APMC",
+              "districtSlug": "vijayanagaram"
+            }
+          ]
+        },
+        {
+          "slug": "visakhapatnam",
+          "api": "Visakhapatnam",
+          "name": "Visakhapatnam",
+          "markets": [
+            {
+              "slug": "bhimunipatnam-apmc",
+              "api": "Bhimunipatnam APMC",
+              "name": "Bhimunipatnam APMC",
+              "districtSlug": "visakhapatnam"
+            },
+            {
+              "slug": "visakhapatnam-apmc",
+              "api": "Visakhapatnam APMC",
+              "name": "Visakhapatnam APMC",
+              "districtSlug": "visakhapatnam"
+            }
+          ]
+        },
+        {
+          "slug": "west-godavari",
+          "api": "West Godavari",
+          "name": "West Godavari",
+          "markets": [
+            {
+              "slug": "achanta-apmc",
+              "api": "Achanta APMC",
+              "name": "Achanta APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "akiveedu-apmc",
+              "api": "Akiveedu APMC",
+              "name": "Akiveedu APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "attili-apmc",
+              "api": "Attili APMC",
+              "name": "Attili APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "bhimavaram-apmc",
+              "api": "Bhimavaram APMC",
+              "name": "Bhimavaram APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "narsapuram-apmc",
+              "api": "Narsapuram APMC",
+              "name": "Narsapuram APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "penugonda-apmc",
+              "api": "Penugonda APMC",
+              "name": "Penugonda APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "tadepalligudem-apmc",
+              "api": "Tadepalligudem APMC",
+              "name": "Tadepalligudem APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "tanuku-apmc",
+              "api": "Tanuku APMC",
+              "name": "Tanuku APMC",
+              "districtSlug": "west-godavari"
+            },
+            {
+              "slug": "undi-apmc",
+              "api": "Undi APMC",
+              "name": "Undi APMC",
+              "districtSlug": "west-godavari"
+            }
+          ]
+        },
+        {
+          "slug": "ysr-kadapa",
+          "api": "YSR Kadapa",
+          "name": "YSR Kadapa",
+          "markets": [
+            {
+              "slug": "badvel-apmc",
+              "api": "Badvel APMC",
+              "name": "Badvel APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "jammalamadugu-apmc",
+              "api": "Jammalamadugu APMC",
+              "name": "Jammalamadugu APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "kadapa",
+              "api": "Kadapa",
+              "name": "Kadapa",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "kamalapuram-apmc",
+              "api": "Kamalapuram APMC",
+              "name": "Kamalapuram APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "mydukur-apmc",
+              "api": "Mydukur APMC",
+              "name": "Mydukur APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "proddatur-apmc",
+              "api": "Proddatur APMC",
+              "name": "Proddatur APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "pulivendala-apmc",
+              "api": "Pulivendala APMC",
+              "name": "Pulivendala APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "rajampet-apmc",
+              "api": "Rajampet APMC",
+              "name": "Rajampet APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "siddavatam-apmc",
+              "api": "Siddavatam APMC",
+              "name": "Siddavatam APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "simhadhripuram-apmc",
+              "api": "Simhadhripuram APMC",
+              "name": "Simhadhripuram APMC",
+              "districtSlug": "ysr-kadapa"
+            },
+            {
+              "slug": "yerraguntla-apmc",
+              "api": "Yerraguntla APMC",
+              "name": "Yerraguntla APMC",
+              "districtSlug": "ysr-kadapa"
+            }
+          ]
+        }
+      ],
+      "commoditySlugs": [
+        "bajra-pearl-millet-cumbu",
+        "banana",
+        "bengal-gram-gram-whole",
+        "black-gram-dal-urd-dal",
+        "black-gram-urd-beans-whole",
+        "brinjal",
+        "cabbage",
+        "cashewnuts",
+        "castor-seed",
+        "cauliflower",
+        "chili-red",
+        "cluster-beans",
+        "coconut",
+        "cotton",
+        "dry-chillies",
+        "ghee",
+        "green-chilli",
+        "green-gram-moong-whole",
+        "ground-nut-seed",
+        "groundnut",
+        "gur-jaggery",
+        "jowar-sorghum",
+        "lemon",
+        "lime",
+        "maize",
+        "mango",
+        "mousambi-sweet-lime",
+        "onion",
+        "paddy-common",
+        "papaya",
+        "potato",
+        "prawn",
+        "ragi-finger-millet",
+        "red-gram-arhar-tur-whole",
+        "red-gram-split-arhar-dal-tur-dal",
+        "rice",
+        "ridgeguard-tori",
+        "sesamum-sesame-gingelly-til",
+        "tamarind-fruit",
+        "tomato",
+        "turmeric",
+        "wood"
+      ],
+      "recordCount": 307
+    },
+    {
+      "slug": "telangana",
+      "api": "Telangana",
+      "name": "Telangana",
+      "districts": [
+        {
+          "slug": "adilabad",
+          "api": "Adilabad",
+          "name": "Adilabad",
+          "markets": [
+            {
+              "slug": "adilabad-rythu-bazar",
+              "api": "Adilabad (Rythu Bazar)",
+              "name": "Adilabad (Rythu Bazar)",
+              "districtSlug": "adilabad"
+            },
+            {
+              "slug": "adilabad-apmc",
+              "api": "Adilabad APMC",
+              "name": "Adilabad APMC",
+              "districtSlug": "adilabad"
+            }
+          ]
+        },
+        {
+          "slug": "bhadradri-kothagudem",
+          "api": "Bhadradri Kothagudem",
+          "name": "Bhadradri Kothagudem",
+          "markets": [
+            {
+              "slug": "bhadrachalam-apmc",
+              "api": "Bhadrachalam APMC",
+              "name": "Bhadrachalam APMC",
+              "districtSlug": "bhadradri-kothagudem"
+            },
+            {
+              "slug": "dammapet-apmc",
+              "api": "Dammapet APMC",
+              "name": "Dammapet APMC",
+              "districtSlug": "bhadradri-kothagudem"
+            },
+            {
+              "slug": "yellandu-apmc",
+              "api": "Yellandu APMC",
+              "name": "Yellandu APMC",
+              "districtSlug": "bhadradri-kothagudem"
+            }
+          ]
+        },
+        {
+          "slug": "hanumakonda",
+          "api": "Hanumakonda",
+          "name": "Hanumakonda",
+          "markets": [
+            {
+              "slug": "excise-colony-rbz",
+              "api": "Excise Colony,RBZ",
+              "name": "Excise Colony,RBZ",
+              "districtSlug": "hanumakonda"
+            }
+          ]
+        },
+        {
+          "slug": "hyderabad",
+          "api": "Hyderabad",
+          "name": "Hyderabad",
+          "markets": [
+            {
+              "slug": "alwal-rbz",
+              "api": "Alwal,RBZ",
+              "name": "Alwal,RBZ",
+              "districtSlug": "hyderabad"
+            },
+            {
+              "slug": "mahboob-manison-apmc",
+              "api": "Mahboob Manison APMC",
+              "name": "Mahboob Manison APMC",
+              "districtSlug": "hyderabad"
+            },
+            {
+              "slug": "rythu-bazar-erragadda",
+              "api": "RYTHU BAZAR ERRAGADDA",
+              "name": "RYTHU BAZAR ERRAGADDA",
+              "districtSlug": "hyderabad"
+            },
+            {
+              "slug": "rythu-bazar-mehdipatnam",
+              "api": "RYTHU BAZAR MEHDIPATNAM",
+              "name": "RYTHU BAZAR MEHDIPATNAM",
+              "districtSlug": "hyderabad"
+            }
+          ]
+        },
+        {
+          "slug": "jogulamba-gadwal",
+          "api": "Jogulamba Gadwal",
+          "name": "Jogulamba Gadwal",
+          "markets": [
+            {
+              "slug": "alampur-apmc",
+              "api": "Alampur APMC",
+              "name": "Alampur APMC",
+              "districtSlug": "jogulamba-gadwal"
+            }
+          ]
+        },
+        {
+          "slug": "karimnagar",
+          "api": "Karimnagar",
+          "name": "Karimnagar",
+          "markets": [
+            {
+              "slug": "gangadhara-apmc",
+              "api": "Gangadhara APMC",
+              "name": "Gangadhara APMC",
+              "districtSlug": "karimnagar"
+            },
+            {
+              "slug": "husnabad-apmc",
+              "api": "Husnabad APMC",
+              "name": "Husnabad APMC",
+              "districtSlug": "karimnagar"
+            },
+            {
+              "slug": "weekly-market-area-rbz-apmc",
+              "api": "Weekly Market Area,RBZ APMC",
+              "name": "Weekly Market Area,RBZ APMC",
+              "districtSlug": "karimnagar"
+            }
+          ]
+        },
+        {
+          "slug": "khammam",
+          "api": "Khammam",
+          "name": "Khammam",
+          "markets": [
+            {
+              "slug": "pavilion-ground-khammam-rbz",
+              "api": "Pavilion Ground,Khammam,RBZ",
+              "name": "Pavilion Ground,Khammam,RBZ",
+              "districtSlug": "khammam"
+            },
+            {
+              "slug": "sattupalli-ramalayam-rbz",
+              "api": "Sattupalli (Ramalayam),RBZ",
+              "name": "Sattupalli (Ramalayam),RBZ",
+              "districtSlug": "khammam"
+            },
+            {
+              "slug": "sattupally-apmc",
+              "api": "Sattupally APMC",
+              "name": "Sattupally APMC",
+              "districtSlug": "khammam"
+            }
+          ]
+        },
+        {
+          "slug": "mahbubnagar",
+          "api": "Mahbubnagar",
+          "name": "Mahbubnagar",
+          "markets": [
+            {
+              "slug": "badepally-apmc",
+              "api": "Badepally APMC",
+              "name": "Badepally APMC",
+              "districtSlug": "mahbubnagar"
+            },
+            {
+              "slug": "mahabubnagar-rythu-bazar",
+              "api": "Mahabubnagar(Rythu Bazar)",
+              "name": "Mahabubnagar(Rythu Bazar)",
+              "districtSlug": "mahbubnagar"
+            }
+          ]
+        },
+        {
+          "slug": "medchal-malkajgiri",
+          "api": "Medchal Malkajgiri",
+          "name": "Medchal Malkajgiri",
+          "markets": [
+            {
+              "slug": "kukatpally-rbz",
+              "api": "Kukatpally,RBZ",
+              "name": "Kukatpally,RBZ",
+              "districtSlug": "medchal-malkajgiri"
+            }
+          ]
+        },
+        {
+          "slug": "nagarkurnool",
+          "api": "Nagarkurnool",
+          "name": "Nagarkurnool",
+          "markets": [
+            {
+              "slug": "kalwakurthy-apmc",
+              "api": "Kalwakurthy APMC",
+              "name": "Kalwakurthy APMC",
+              "districtSlug": "nagarkurnool"
+            }
+          ]
+        },
+        {
+          "slug": "nalgonda",
+          "api": "Nalgonda",
+          "name": "Nalgonda",
+          "markets": [
+            {
+              "slug": "miryalguda-rythu-bazar",
+              "api": "Miryalguda(Rythu Bazar)",
+              "name": "Miryalguda(Rythu Bazar)",
+              "districtSlug": "nalgonda"
+            },
+            {
+              "slug": "nakrekal-apmc",
+              "api": "Nakrekal APMC",
+              "name": "Nakrekal APMC",
+              "districtSlug": "nalgonda"
+            },
+            {
+              "slug": "venkateswarnagar-apmc",
+              "api": "Venkateswarnagar APMC",
+              "name": "Venkateswarnagar APMC",
+              "districtSlug": "nalgonda"
+            }
+          ]
+        },
+        {
+          "slug": "narayanpet",
+          "api": "Narayanpet",
+          "name": "Narayanpet",
+          "markets": [
+            {
+              "slug": "narayanpet-apmc",
+              "api": "Narayanpet APMC",
+              "name": "Narayanpet APMC",
+              "districtSlug": "narayanpet"
+            }
+          ]
+        },
+        {
+          "slug": "ranga-reddy",
+          "api": "Ranga Reddy",
+          "name": "Ranga Reddy",
+          "markets": [
+            {
+              "slug": "babbuguda",
+              "api": "Babbuguda",
+              "name": "Babbuguda",
+              "districtSlug": "ranga-reddy"
+            },
+            {
+              "slug": "saroornagar-rbz",
+              "api": "Saroornagar,RBZ",
+              "name": "Saroornagar,RBZ",
+              "districtSlug": "ranga-reddy"
+            },
+            {
+              "slug": "shankarapally-apmc",
+              "api": "Shankarapally APMC",
+              "name": "Shankarapally APMC",
+              "districtSlug": "ranga-reddy"
+            },
+            {
+              "slug": "vanasthalipuram-rbz",
+              "api": "Vanasthalipuram,RBZ",
+              "name": "Vanasthalipuram,RBZ",
+              "districtSlug": "ranga-reddy"
+            }
+          ]
+        },
+        {
+          "slug": "sangareddy",
+          "api": "Sangareddy",
+          "name": "Sangareddy",
+          "markets": [
+            {
+              "slug": "apmc-patancheru",
+              "api": "APMC PATANCHERU",
+              "name": "APMC PATANCHERU",
+              "districtSlug": "sangareddy"
+            },
+            {
+              "slug": "sangareddy-apmc",
+              "api": "Sangareddy APMC",
+              "name": "Sangareddy APMC",
+              "districtSlug": "sangareddy"
+            }
+          ]
+        },
+        {
+          "slug": "siddipet",
+          "api": "Siddipet",
+          "name": "Siddipet",
+          "markets": [
+            {
+              "slug": "bejjenki-apmc",
+              "api": "Bejjenki APMC",
+              "name": "Bejjenki APMC",
+              "districtSlug": "siddipet"
+            },
+            {
+              "slug": "gajwel-apmc",
+              "api": "Gajwel APMC",
+              "name": "Gajwel APMC",
+              "districtSlug": "siddipet"
+            },
+            {
+              "slug": "siddipet-rythu-bazar",
+              "api": "Siddipet(Rythu Bazar)",
+              "name": "Siddipet(Rythu Bazar)",
+              "districtSlug": "siddipet"
+            }
+          ]
+        },
+        {
+          "slug": "suryapet",
+          "api": "Suryapet",
+          "name": "Suryapet",
+          "markets": [
+            {
+              "slug": "suryapeta-apmc",
+              "api": "Suryapeta APMC",
+              "name": "Suryapeta APMC",
+              "districtSlug": "suryapet"
+            },
+            {
+              "slug": "tirumalagiri-apmc",
+              "api": "Tirumalagiri APMC",
+              "name": "Tirumalagiri APMC",
+              "districtSlug": "suryapet"
+            }
+          ]
+        },
+        {
+          "slug": "wanaparthy",
+          "api": "Wanaparthy",
+          "name": "Wanaparthy",
+          "markets": [
+            {
+              "slug": "wanaparthy-town-apmc",
+              "api": "Wanaparthy town APMC",
+              "name": "Wanaparthy town APMC",
+              "districtSlug": "wanaparthy"
+            }
+          ]
+        },
+        {
+          "slug": "warangal",
+          "api": "Warangal",
+          "name": "Warangal",
+          "markets": [
+            {
+              "slug": "warangal-apmc",
+              "api": "Warangal APMC",
+              "name": "Warangal APMC",
+              "districtSlug": "warangal"
+            }
+          ]
+        }
+      ],
+      "commoditySlugs": [
+        "banana-green",
+        "beetroot",
+        "bhindi-ladies-finger",
+        "bitter-gourd",
+        "bottle-gourd",
+        "brinjal",
+        "cabbage",
+        "calf",
+        "capsicum",
+        "carrot",
+        "cauliflower",
+        "cluster-beans",
+        "colacasia",
+        "cotton",
+        "cowpea-lobia-karamani",
+        "cucumbar-kheera",
+        "drumstick",
+        "dry-chillies",
+        "elephant-yam-suran-amorphophallus",
+        "field-bean-anumulu",
+        "field-pea",
+        "french-beans-frasbean",
+        "garlic",
+        "ginger-green",
+        "green-chilli",
+        "green-gram-moong-whole",
+        "groundnut",
+        "indian-beans-seam",
+        "ladies-finger",
+        "leafy-vegetable",
+        "lime",
+        "little-gourd-kundru",
+        "maize",
+        "onion",
+        "other-green-and-fresh-vegetables",
+        "ox",
+        "paddy-common",
+        "potato",
+        "red-gram-arhar-tur-whole",
+        "ridgeguard-tori",
+        "snakeguard",
+        "tamarind-fruit",
+        "thondekai",
+        "tinda",
+        "tomato",
+        "turmeric-raw",
+        "wild-cucumber",
+        "wood",
+        "yam-ratalu"
+      ],
+      "recordCount": 301
+    },
+    {
+      "slug": "karnataka",
+      "api": "Karnataka",
+      "name": "Karnataka",
+      "districts": [
+        {
+          "slug": "bagalkot",
+          "api": "Bagalkot",
+          "name": "Bagalkot",
+          "markets": [
+            {
+              "slug": "hungund-apmc",
+              "api": "Hungund APMC",
+              "name": "Hungund APMC",
+              "districtSlug": "bagalkot"
+            }
+          ]
+        },
+        {
+          "slug": "belagavi",
+          "api": "Belagavi",
+          "name": "Belagavi",
+          "markets": [
+            {
+              "slug": "belgaum-apmc",
+              "api": "Belgaum APMC",
+              "name": "Belgaum APMC",
+              "districtSlug": "belagavi"
+            }
+          ]
+        },
+        {
+          "slug": "bengaluru-rural",
+          "api": "Bengaluru Rural",
+          "name": "Bengaluru Rural",
+          "markets": [
+            {
+              "slug": "doddaballapur-apmc",
+              "api": "Doddaballapur APMC",
+              "name": "Doddaballapur APMC",
+              "districtSlug": "bengaluru-rural"
+            }
+          ]
+        },
+        {
+          "slug": "bengaluru-south",
+          "api": "Bengaluru South",
+          "name": "Bengaluru South",
+          "markets": [
+            {
+              "slug": "channapatna-apmc",
+              "api": "Channapatna APMC",
+              "name": "Channapatna APMC",
+              "districtSlug": "bengaluru-south"
+            },
+            {
+              "slug": "ramanagara-apmc",
+              "api": "Ramanagara APMC",
+              "name": "Ramanagara APMC",
+              "districtSlug": "bengaluru-south"
+            }
+          ]
+        },
+        {
+          "slug": "chamarajanagar",
+          "api": "Chamarajanagar",
+          "name": "Chamarajanagar",
+          "markets": [
+            {
+              "slug": "chamarajanagar-apmc",
+              "api": "Chamarajanagar APMC",
+              "name": "Chamarajanagar APMC",
+              "districtSlug": "chamarajanagar"
+            },
+            {
+              "slug": "gundlupet-apmc",
+              "api": "Gundlupet APMC",
+              "name": "Gundlupet APMC",
+              "districtSlug": "chamarajanagar"
+            }
+          ]
+        },
+        {
+          "slug": "chikkaballapur",
+          "api": "Chikkaballapur",
+          "name": "Chikkaballapur",
+          "markets": [
+            {
+              "slug": "bagepalli-apmc",
+              "api": "Bagepalli APMC",
+              "name": "Bagepalli APMC",
+              "districtSlug": "chikkaballapur"
+            },
+            {
+              "slug": "gauribidanur-apmc",
+              "api": "Gauribidanur APMC",
+              "name": "Gauribidanur APMC",
+              "districtSlug": "chikkaballapur"
+            }
+          ]
+        },
+        {
+          "slug": "chikkamagaluru",
+          "api": "Chikkamagaluru",
+          "name": "Chikkamagaluru",
+          "markets": [
+            {
+              "slug": "mudigere-apmc",
+              "api": "Mudigere APMC",
+              "name": "Mudigere APMC",
+              "districtSlug": "chikkamagaluru"
+            }
+          ]
+        },
+        {
+          "slug": "chitradurga",
+          "api": "Chitradurga",
+          "name": "Chitradurga",
+          "markets": [
+            {
+              "slug": "hiriyur-apmc",
+              "api": "Hiriyur APMC",
+              "name": "Hiriyur APMC",
+              "districtSlug": "chitradurga"
+            }
+          ]
+        },
+        {
+          "slug": "davangere",
+          "api": "Davangere",
+          "name": "Davangere",
+          "markets": [
+            {
+              "slug": "channagiri-apmc",
+              "api": "Channagiri APMC",
+              "name": "Channagiri APMC",
+              "districtSlug": "davangere"
+            },
+            {
+              "slug": "harappanahalli-apmc",
+              "api": "HarappanaHalli APMC",
+              "name": "HarappanaHalli APMC",
+              "districtSlug": "davangere"
+            },
+            {
+              "slug": "honnali-apmc",
+              "api": "Honnali APMC",
+              "name": "Honnali APMC",
+              "districtSlug": "davangere"
+            }
+          ]
+        },
+        {
+          "slug": "kalaburagi",
+          "api": "Kalaburagi",
+          "name": "Kalaburagi",
+          "markets": [
+            {
+              "slug": "chincholi-apmc",
+              "api": "Chincholi APMC",
+              "name": "Chincholi APMC",
+              "districtSlug": "kalaburagi"
+            },
+            {
+              "slug": "kalaburagi-apmc",
+              "api": "Kalaburagi APMC",
+              "name": "Kalaburagi APMC",
+              "districtSlug": "kalaburagi"
+            }
+          ]
+        },
+        {
+          "slug": "kodagu",
+          "api": "Kodagu",
+          "name": "Kodagu",
+          "markets": [
+            {
+              "slug": "gonikappal-apmc",
+              "api": "Gonikappal APMC",
+              "name": "Gonikappal APMC",
+              "districtSlug": "kodagu"
+            },
+            {
+              "slug": "madikeri-apmc",
+              "api": "Madikeri APMC",
+              "name": "Madikeri APMC",
+              "districtSlug": "kodagu"
+            }
+          ]
+        },
+        {
+          "slug": "kolar",
+          "api": "Kolar",
+          "name": "Kolar",
+          "markets": [
+            {
+              "slug": "bangarpet-apmc",
+              "api": "Bangarpet APMC",
+              "name": "Bangarpet APMC",
+              "districtSlug": "kolar"
+            },
+            {
+              "slug": "malur-apmc",
+              "api": "Malur APMC",
+              "name": "Malur APMC",
+              "districtSlug": "kolar"
+            }
+          ]
+        },
+        {
+          "slug": "koppal",
+          "api": "Koppal",
+          "name": "Koppal",
+          "markets": [
+            {
+              "slug": "gangavathi-apmc",
+              "api": "Gangavathi APMC",
+              "name": "Gangavathi APMC",
+              "districtSlug": "koppal"
+            },
+            {
+              "slug": "kanakagiri-apmc",
+              "api": "Kanakagiri APMC",
+              "name": "Kanakagiri APMC",
+              "districtSlug": "koppal"
+            },
+            {
+              "slug": "kustagi-apmc",
+              "api": "Kustagi APMC",
+              "name": "Kustagi APMC",
+              "districtSlug": "koppal"
+            }
+          ]
+        },
+        {
+          "slug": "mandya",
+          "api": "Mandya",
+          "name": "Mandya",
+          "markets": [
+            {
+              "slug": "pandavapura-apmc",
+              "api": "Pandavapura APMC",
+              "name": "Pandavapura APMC",
+              "districtSlug": "mandya"
+            }
+          ]
+        },
+        {
+          "slug": "mysuru",
+          "api": "Mysuru",
+          "name": "Mysuru",
+          "markets": [
+            {
+              "slug": "hunsur-apmc",
+              "api": "Hunsur APMC",
+              "name": "Hunsur APMC",
+              "districtSlug": "mysuru"
+            },
+            {
+              "slug": "periyapatna-apmc",
+              "api": "Periyapatna APMC",
+              "name": "Periyapatna APMC",
+              "districtSlug": "mysuru"
+            }
+          ]
+        },
+        {
+          "slug": "raichur",
+          "api": "Raichur",
+          "name": "Raichur",
+          "markets": [
+            {
+              "slug": "lingasugur-apmc",
+              "api": "Lingasugur APMC",
+              "name": "Lingasugur APMC",
+              "districtSlug": "raichur"
+            },
+            {
+              "slug": "raichur-apmc",
+              "api": "Raichur APMC",
+              "name": "Raichur APMC",
+              "districtSlug": "raichur"
+            },
+            {
+              "slug": "sindhanur-apmc",
+              "api": "Sindhanur APMC",
+              "name": "Sindhanur APMC",
+              "districtSlug": "raichur"
+            }
+          ]
+        },
+        {
+          "slug": "shivamogga",
+          "api": "Shivamogga",
+          "name": "Shivamogga",
+          "markets": [
+            {
+              "slug": "shikaripura-apmc",
+              "api": "Shikaripura APMC",
+              "name": "Shikaripura APMC",
+              "districtSlug": "shivamogga"
+            }
+          ]
+        },
+        {
+          "slug": "uttara-kannada",
+          "api": "Uttara Kannada",
+          "name": "Uttara Kannada",
+          "markets": [
+            {
+              "slug": "haliyala-apmc",
+              "api": "Haliyala APMC",
+              "name": "Haliyala APMC",
+              "districtSlug": "uttara-kannada"
+            }
+          ]
+        },
+        {
+          "slug": "vijayanagara",
+          "api": "Vijayanagara",
+          "name": "Vijayanagara",
+          "markets": [
+            {
+              "slug": "hoovinahadagali-apmc",
+              "api": "Hoovinahadagali APMC",
+              "name": "Hoovinahadagali APMC",
+              "districtSlug": "vijayanagara"
+            }
+          ]
+        },
+        {
+          "slug": "vijayapura",
+          "api": "Vijayapura",
+          "name": "Vijayapura",
+          "markets": [
+            {
+              "slug": "talikot-apmc",
+              "api": "Talikot APMC",
+              "name": "Talikot APMC",
+              "districtSlug": "vijayapura"
+            }
+          ]
+        }
+      ],
+      "commoditySlugs": [
+        "alasande-gram",
+        "alsandikai",
+        "apple",
+        "arecanut-betelnut-supari",
+        "ashgourd",
+        "bajra-pearl-millet-cumbu",
+        "banana",
+        "banana-green",
+        "beans",
+        "beetroot",
+        "bengal-gram-gram-whole",
+        "bitter-gourd",
+        "black-gram-dal-urd-dal",
+        "black-gram-urd-beans-whole",
+        "black-pepper",
+        "bottle-gourd",
+        "brinjal",
+        "bunch-beans",
+        "cabbage",
+        "capsicum",
+        "carrot",
+        "cauliflower",
+        "chapparad-avare",
+        "chikoos-sapota",
+        "chilly-capsicum",
+        "coconut",
+        "copra",
+        "cotton",
+        "cowpea-lobia-karamani",
+        "cowpea-veg",
+        "cucumbar-kheera",
+        "drumstick",
+        "flowers-others",
+        "garlic",
+        "ginger-green",
+        "green-avare-w",
+        "green-chilli",
+        "green-gram-moong-whole",
+        "ground-nut-seed",
+        "groundnut",
+        "guava",
+        "gur-jaggery",
+        "jowar-sorghum",
+        "knool-khol",
+        "ladies-finger",
+        "lime",
+        "maize",
+        "onion",
+        "orange",
+        "paddy-common",
+        "papaya",
+        "peas-wet",
+        "pineapple",
+        "pomegranate",
+        "potato",
+        "raddish",
+        "ragi-finger-millet",
+        "red-gram-arhar-tur-whole",
+        "red-gram-split-arhar-dal-tur-dal",
+        "rice",
+        "ridgeguard-tori",
+        "seemebadnekai",
+        "sesamum-sesame-gingelly-til",
+        "snakeguard",
+        "soyabean",
+        "sunflower-sunflower-seed",
+        "tender-coconut",
+        "thogrikai",
+        "thondekai",
+        "tomato",
+        "wheat"
+      ],
+      "recordCount": 251
+    }
+  ],
+  "commodities": [
+    {
+      "slug": "paddy-common",
+      "api": "Paddy(Common)",
+      "name": "Paddy(Common)",
+      "recordCount": 127
+    },
+    {
+      "slug": "maize",
+      "api": "Maize",
+      "name": "Maize",
+      "recordCount": 50
+    },
+    {
+      "slug": "tomato",
+      "api": "Tomato",
+      "name": "Tomato",
+      "recordCount": 41
+    },
+    {
+      "slug": "green-chilli",
+      "api": "Green Chilli",
+      "name": "Green Chilli",
+      "recordCount": 30
+    },
+    {
+      "slug": "brinjal",
+      "api": "Brinjal",
+      "name": "Brinjal",
+      "recordCount": 28
+    },
+    {
+      "slug": "groundnut",
+      "api": "Groundnut",
+      "name": "Groundnut",
+      "recordCount": 23
+    },
+    {
+      "slug": "cabbage",
+      "api": "Cabbage",
+      "name": "Cabbage",
+      "recordCount": 21
+    },
+    {
+      "slug": "potato",
+      "api": "Potato",
+      "name": "Potato",
+      "recordCount": 21
+    },
+    {
+      "slug": "carrot",
+      "api": "Carrot",
+      "name": "Carrot",
+      "recordCount": 19
+    },
+    {
+      "slug": "cotton",
+      "api": "Cotton",
+      "name": "Cotton",
+      "recordCount": 19
+    },
+    {
+      "slug": "cucumbar-kheera",
+      "api": "Cucumbar(Kheera)",
+      "name": "Cucumbar(Kheera)",
+      "recordCount": 19
+    },
+    {
+      "slug": "onion",
+      "api": "Onion",
+      "name": "Onion",
+      "recordCount": 19
+    },
+    {
+      "slug": "ridgeguard-tori",
+      "api": "Ridgeguard(Tori)",
+      "name": "Ridgeguard(Tori)",
+      "recordCount": 19
+    },
+    {
+      "slug": "beetroot",
+      "api": "Beetroot",
+      "name": "Beetroot",
+      "recordCount": 18
+    },
+    {
+      "slug": "bitter-gourd",
+      "api": "Bitter gourd",
+      "name": "Bitter gourd",
+      "recordCount": 18
+    },
+    {
+      "slug": "red-gram-arhar-tur-whole",
+      "api": "Red gram/Arhar/Tur(whole)",
+      "name": "Red gram/Arhar/Tur(whole)",
+      "recordCount": 16
+    },
+    {
+      "slug": "bengal-gram-gram-whole",
+      "api": "Bengal Gram(Gram)(Whole)",
+      "name": "Bengal Gram(Gram)(Whole)",
+      "recordCount": 15
+    },
+    {
+      "slug": "cauliflower",
+      "api": "Cauliflower",
+      "name": "Cauliflower",
+      "recordCount": 15
+    },
+    {
+      "slug": "bhindi-ladies-finger",
+      "api": "Bhindi(Ladies Finger)",
+      "name": "Bhindi(Ladies Finger)",
+      "recordCount": 14
+    },
+    {
+      "slug": "banana",
+      "api": "Banana",
+      "name": "Banana",
+      "recordCount": 13
+    },
+    {
+      "slug": "cluster-beans",
+      "api": "Cluster beans",
+      "name": "Cluster beans",
+      "recordCount": 13
+    },
+    {
+      "slug": "black-gram-urd-beans-whole",
+      "api": "Black Gram(Urd Beans)(Whole)",
+      "name": "Black Gram(Urd Beans)(Whole)",
+      "recordCount": 12
+    },
+    {
+      "slug": "bottle-gourd",
+      "api": "Bottle gourd",
+      "name": "Bottle gourd",
+      "recordCount": 11
+    },
+    {
+      "slug": "beans",
+      "api": "Beans",
+      "name": "Beans",
+      "recordCount": 10
+    },
+    {
+      "slug": "green-gram-moong-whole",
+      "api": "Green Gram(Moong)(Whole)",
+      "name": "Green Gram(Moong)(Whole)",
+      "recordCount": 10
+    },
+    {
+      "slug": "ladies-finger",
+      "api": "Ladies Finger",
+      "name": "Ladies Finger",
+      "recordCount": 10
+    },
+    {
+      "slug": "rice",
+      "api": "Rice",
+      "name": "Rice",
+      "recordCount": 10
+    },
+    {
+      "slug": "snakeguard",
+      "api": "Snakeguard",
+      "name": "Snakeguard",
+      "recordCount": 10
+    },
+    {
+      "slug": "drumstick",
+      "api": "Drumstick",
+      "name": "Drumstick",
+      "recordCount": 9
+    },
+    {
+      "slug": "french-beans-frasbean",
+      "api": "French Beans(Frasbean)",
+      "name": "French Beans(Frasbean)",
+      "recordCount": 9
+    },
+    {
+      "slug": "gur-jaggery",
+      "api": "Gur(Jaggery)",
+      "name": "Gur(Jaggery)",
+      "recordCount": 9
+    },
+    {
+      "slug": "capsicum",
+      "api": "Capsicum",
+      "name": "Capsicum",
+      "recordCount": 8
+    },
+    {
+      "slug": "colacasia",
+      "api": "Colacasia",
+      "name": "Colacasia",
+      "recordCount": 7
+    },
+    {
+      "slug": "banana-green",
+      "api": "Banana - Green",
+      "name": "Banana - Green",
+      "recordCount": 6
+    },
+    {
+      "slug": "dry-chillies",
+      "api": "Dry Chillies",
+      "name": "Dry Chillies",
+      "recordCount": 6
+    },
+    {
+      "slug": "jowar-sorghum",
+      "api": "Jowar(Sorghum)",
+      "name": "Jowar(Sorghum)",
+      "recordCount": 6
+    },
+    {
+      "slug": "knool-khol",
+      "api": "Knool Khol",
+      "name": "Knool Khol",
+      "recordCount": 6
+    },
+    {
+      "slug": "leafy-vegetable",
+      "api": "Leafy Vegetable",
+      "name": "Leafy Vegetable",
+      "recordCount": 6
+    },
+    {
+      "slug": "raddish",
+      "api": "Raddish",
+      "name": "Raddish",
+      "recordCount": 6
+    },
+    {
+      "slug": "sunflower-sunflower-seed",
+      "api": "Sunflower/Sunflower Seed",
+      "name": "Sunflower/Sunflower Seed",
+      "recordCount": 6
+    },
+    {
+      "slug": "tamarind-fruit",
+      "api": "Tamarind Fruit",
+      "name": "Tamarind Fruit",
+      "recordCount": 6
+    },
+    {
+      "slug": "arecanut-betelnut-supari",
+      "api": "Arecanut(Betelnut/Supari)",
+      "name": "Arecanut(Betelnut/Supari)",
+      "recordCount": 5
+    },
+    {
+      "slug": "cashewnuts",
+      "api": "Cashewnuts",
+      "name": "Cashewnuts",
+      "recordCount": 5
+    },
+    {
+      "slug": "coconut",
+      "api": "Coconut",
+      "name": "Coconut",
+      "recordCount": 5
+    },
+    {
+      "slug": "ginger-green",
+      "api": "Ginger(Green)",
+      "name": "Ginger(Green)",
+      "recordCount": 5
+    },
+    {
+      "slug": "lime",
+      "api": "Lime",
+      "name": "Lime",
+      "recordCount": 5
+    },
+    {
+      "slug": "little-gourd-kundru",
+      "api": "Little gourd(Kundru)",
+      "name": "Little gourd(Kundru)",
+      "recordCount": 5
+    },
+    {
+      "slug": "ragi-finger-millet",
+      "api": "Ragi(Finger Millet)",
+      "name": "Ragi(Finger Millet)",
+      "recordCount": 5
+    },
+    {
+      "slug": "thondekai",
+      "api": "Thondekai",
+      "name": "Thondekai",
+      "recordCount": 5
+    },
+    {
+      "slug": "black-gram-dal-urd-dal",
+      "api": "Black Gram Dal(Urd Dal)",
+      "name": "Black Gram Dal(Urd Dal)",
+      "recordCount": 4
+    },
+    {
+      "slug": "other-green-and-fresh-vegetables",
+      "api": "Other green and fresh vegetables",
+      "name": "Other green and fresh vegetables",
+      "recordCount": 4
+    },
+    {
+      "slug": "papaya",
+      "api": "Papaya",
+      "name": "Papaya",
+      "recordCount": 4
+    },
+    {
+      "slug": "bajra-pearl-millet-cumbu",
+      "api": "Bajra(Pearl Millet/Cumbu)",
+      "name": "Bajra(Pearl Millet/Cumbu)",
+      "recordCount": 3
+    },
+    {
+      "slug": "black-pepper",
+      "api": "Black pepper",
+      "name": "Black pepper",
+      "recordCount": 3
+    },
+    {
+      "slug": "chili-red",
+      "api": "Chili Red",
+      "name": "Chili Red",
+      "recordCount": 3
+    },
+    {
+      "slug": "field-bean-anumulu",
+      "api": "Field Bean(Anumulu)",
+      "name": "Field Bean(Anumulu)",
+      "recordCount": 3
+    },
+    {
+      "slug": "field-pea",
+      "api": "Field Pea",
+      "name": "Field Pea",
+      "recordCount": 3
+    },
+    {
+      "slug": "garlic",
+      "api": "Garlic",
+      "name": "Garlic",
+      "recordCount": 3
+    },
+    {
+      "slug": "ground-nut-seed",
+      "api": "Ground Nut Seed",
+      "name": "Ground Nut Seed",
+      "recordCount": 3
+    },
+    {
+      "slug": "lemon",
+      "api": "Lemon",
+      "name": "Lemon",
+      "recordCount": 3
+    },
+    {
+      "slug": "mango",
+      "api": "Mango",
+      "name": "Mango",
+      "recordCount": 3
+    },
+    {
+      "slug": "sesamum-sesame-gingelly-til",
+      "api": "Sesamum(Sesame,Gingelly,Til)",
+      "name": "Sesamum(Sesame,Gingelly,Til)",
+      "recordCount": 3
+    },
+    {
+      "slug": "tender-coconut",
+      "api": "Tender Coconut",
+      "name": "Tender Coconut",
+      "recordCount": 3
+    },
+    {
+      "slug": "wild-cucumber",
+      "api": "Wild Cucumber",
+      "name": "Wild Cucumber",
+      "recordCount": 3
+    },
+    {
+      "slug": "wood",
+      "api": "Wood",
+      "name": "Wood",
+      "recordCount": 3
+    },
+    {
+      "slug": "yam-ratalu",
+      "api": "Yam(Ratalu)",
+      "name": "Yam(Ratalu)",
+      "recordCount": 3
+    },
+    {
+      "slug": "chapparad-avare",
+      "api": "Chapparad Avare",
+      "name": "Chapparad Avare",
+      "recordCount": 2
+    },
+    {
+      "slug": "chilly-capsicum",
+      "api": "Chilly Capsicum",
+      "name": "Chilly Capsicum",
+      "recordCount": 2
+    },
+    {
+      "slug": "cowpea-lobia-karamani",
+      "api": "Cowpea(Lobia/Karamani)",
+      "name": "Cowpea(Lobia/Karamani)",
+      "recordCount": 2
+    },
+    {
+      "slug": "green-avare-w",
+      "api": "Green Avare(W)",
+      "name": "Green Avare(W)",
+      "recordCount": 2
+    },
+    {
+      "slug": "mousambi-sweet-lime",
+      "api": "Mousambi(Sweet Lime)",
+      "name": "Mousambi(Sweet Lime)",
+      "recordCount": 2
+    },
+    {
+      "slug": "red-gram-split-arhar-dal-tur-dal",
+      "api": "Red gram split/Arhar dal/Tur dal",
+      "name": "Red gram split/Arhar dal/Tur dal",
+      "recordCount": 2
+    },
+    {
+      "slug": "seemebadnekai",
+      "api": "Seemebadnekai",
+      "name": "Seemebadnekai",
+      "recordCount": 2
+    },
+    {
+      "slug": "tinda",
+      "api": "Tinda",
+      "name": "Tinda",
+      "recordCount": 2
+    },
+    {
+      "slug": "turmeric",
+      "api": "Turmeric",
+      "name": "Turmeric",
+      "recordCount": 2
+    },
+    {
+      "slug": "wheat",
+      "api": "Wheat",
+      "name": "Wheat",
+      "recordCount": 2
+    },
+    {
+      "slug": "alasande-gram",
+      "api": "Alasande Gram",
+      "name": "Alasande Gram",
+      "recordCount": 1
+    },
+    {
+      "slug": "alsandikai",
+      "api": "Alsandikai",
+      "name": "Alsandikai",
+      "recordCount": 1
+    },
+    {
+      "slug": "apple",
+      "api": "Apple",
+      "name": "Apple",
+      "recordCount": 1
+    },
+    {
+      "slug": "ashgourd",
+      "api": "Ashgourd",
+      "name": "Ashgourd",
+      "recordCount": 1
+    },
+    {
+      "slug": "bunch-beans",
+      "api": "Bunch Beans",
+      "name": "Bunch Beans",
+      "recordCount": 1
+    },
+    {
+      "slug": "calf",
+      "api": "Calf",
+      "name": "Calf",
+      "recordCount": 1
+    },
+    {
+      "slug": "castor-seed",
+      "api": "Castor Seed",
+      "name": "Castor Seed",
+      "recordCount": 1
+    },
+    {
+      "slug": "chikoos-sapota",
+      "api": "Chikoos(Sapota)",
+      "name": "Chikoos(Sapota)",
+      "recordCount": 1
+    },
+    {
+      "slug": "copra",
+      "api": "Copra",
+      "name": "Copra",
+      "recordCount": 1
+    },
+    {
+      "slug": "cowpea-veg",
+      "api": "Cowpea(Veg)",
+      "name": "Cowpea(Veg)",
+      "recordCount": 1
+    },
+    {
+      "slug": "elephant-yam-suran-amorphophallus",
+      "api": "Elephant Yam(Suran)/Amorphophallus",
+      "name": "Elephant Yam(Suran)/Amorphophallus",
+      "recordCount": 1
+    },
+    {
+      "slug": "flowers-others",
+      "api": "Flowers-Others",
+      "name": "Flowers-Others",
+      "recordCount": 1
+    },
+    {
+      "slug": "ghee",
+      "api": "Ghee",
+      "name": "Ghee",
+      "recordCount": 1
+    },
+    {
+      "slug": "guava",
+      "api": "Guava",
+      "name": "Guava",
+      "recordCount": 1
+    },
+    {
+      "slug": "indian-beans-seam",
+      "api": "Indian Beans(Seam)",
+      "name": "Indian Beans(Seam)",
+      "recordCount": 1
+    },
+    {
+      "slug": "orange",
+      "api": "Orange",
+      "name": "Orange",
+      "recordCount": 1
+    },
+    {
+      "slug": "ox",
+      "api": "Ox",
+      "name": "Ox",
+      "recordCount": 1
+    },
+    {
+      "slug": "peas-wet",
+      "api": "Peas Wet",
+      "name": "Peas Wet",
+      "recordCount": 1
+    },
+    {
+      "slug": "pineapple",
+      "api": "Pineapple",
+      "name": "Pineapple",
+      "recordCount": 1
+    },
+    {
+      "slug": "pomegranate",
+      "api": "Pomegranate",
+      "name": "Pomegranate",
+      "recordCount": 1
+    },
+    {
+      "slug": "prawn",
+      "api": "Prawn",
+      "name": "Prawn",
+      "recordCount": 1
+    },
+    {
+      "slug": "soyabean",
+      "api": "Soyabean",
+      "name": "Soyabean",
+      "recordCount": 1
+    },
+    {
+      "slug": "thogrikai",
+      "api": "Thogrikai",
+      "name": "Thogrikai",
+      "recordCount": 1
+    },
+    {
+      "slug": "turmeric-raw",
+      "api": "Turmeric(raw)",
+      "name": "Turmeric(raw)",
+      "recordCount": 1
+    }
+  ]
+}
