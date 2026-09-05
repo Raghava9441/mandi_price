@@ -15,6 +15,8 @@ import { PriceBoard } from '@/components/PriceBoard';
 import { StatRow } from '@/components/StatRow';
 import { UnitProvider } from '@/components/UnitContext';
 import { EmptyState } from '@/components/EmptyState';
+import { AdSlot } from '@/components/ads/AdSlot';
+import { mayShowAds } from '@/lib/ads';
 import { FaqBlock } from '@/components/FaqBlock';
 import { RelatedLinks } from '@/components/RelatedLinks';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -149,6 +151,12 @@ export default async function CommodityStatePage({ params }: { params: Promise<P
   const path = `/prices/${state.slug}/${commodity.slug}`;
 
   const dateLabel = s.arrivalDate ? formatDate(s.arrivalDate, locale === 'te' ? 'te-IN' : 'en-IN') : null;
+
+  // No ads on a page with nothing on it. AdSense policy prohibits ads without publisher
+  // content, and a page showing "no arrivals today" or an upstream failure is exactly
+  // that - serving ads there risks the account and gives the reader an advert in place
+  // of the number they came for.
+  const showAds = mayShowAds({ hasContent: !unavailable && s.quoted > 0 });
 
   const crumbs = [
     { name: d.nav.home, path: `/${locale}` },
@@ -312,6 +320,11 @@ export default async function CommodityStatePage({ params }: { params: Promise<P
               </p>
             )}
 
+            {/* Placed AFTER the headline figure and the summary, never above them. The
+                reader's question is answered before anything is sold to them, and an ad
+                between the title and the price would also push the LCP element down. */}
+            {showAds && <AdSlot name="priceTop" />}
+
             <div className="mt-6">
               <PriceBoard
                 records={page.records}
@@ -340,6 +353,8 @@ export default async function CommodityStatePage({ params }: { params: Promise<P
             </div>
           </UnitProvider>
         )}
+
+        {showAds && <AdSlot name="priceBottom" />}
 
         <FaqBlock heading={d.faq.heading} entries={faq} />
 

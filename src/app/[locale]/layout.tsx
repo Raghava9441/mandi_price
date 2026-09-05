@@ -6,6 +6,7 @@ import { LOCALES, LOCALE_TAGS, getDictionary, isLocale, type Locale } from '@/li
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
 import { siteUrl } from '@/lib/seo/metadata';
+import { AdSenseScript } from '@/components/ads/AdSenseScript';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -87,6 +88,7 @@ export default async function LocaleLayout({
           {children}
         </main>
         <SiteFooter locale={typed} />
+        <AdSenseScript />
       </body>
     </html>
   );

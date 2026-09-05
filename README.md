@@ -166,6 +166,61 @@ Mobile-first, for cheap Android phones used outdoors.
 - Sitemaps are sharded one file per state (the 50k URL cap), with reciprocal hreflang.
 - `?sort=` and `?unit=` are disallowed in `robots.txt` and canonicalised away.
 
+## Ads (Google AdSense)
+
+The integration is built but **completely inert** until `NEXT_PUBLIC_ADSENSE_CLIENT_ID`
+is set: no script is loaded, no space is reserved, `/ads.txt` returns 404.
+
+```
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXXXXXXXX
+NEXT_PUBLIC_ADSENSE_SLOT_PRICE_TOP=1234567890
+NEXT_PUBLIC_ADSENSE_SLOT_PRICE_BOTTOM=0987654321
+```
+
+`NEXT_PUBLIC_` is correct here — a publisher ID is public by design and appears in the
+page source of every AdSense site.
+
+### Before applying
+
+AdSense approval is not a formality, and applying too early gets you rejected with a
+cooling-off period. Get these right first:
+
+1. **The site must be publicly reachable.** Vercel Deployment Protection login-walls it;
+   a reviewer (and Googlebot) sees a login page, not your content. This is an automatic
+   rejection.
+2. **Fill the catalog.** Three states is not "substantial content". Run `npm run catalog`
+   with a real key for all 25.
+3. **Have some organic traffic and a few weeks of history.** Brand-new domains with no
+   visitors are routinely declined.
+4. **Add privacy policy, terms and contact pages.** Required by AdSense policy; the site
+   does not have them yet.
+5. **Be aware of the "low value content" risk.** Programmatic pages built on a public
+   dataset are a recognised rejection category. The data-derived summaries and FAQ on
+   each page exist partly for this reason, but it remains the main risk here.
+
+### How it is wired
+
+- `AdSenseScript` loads the library once from the root layout with `afterInteractive`, so
+  a heavy third-party script never blocks first paint — these pages live or die on Core
+  Web Vitals.
+- `AdSlot` **reserves its height before the ad loads**. An ad that pops in and shoves the
+  price list down is a CLS hit on every page view, and CLS is a ranking factor for exactly
+  the queries this site targets.
+- Slots re-initialise per route. The App Router keeps the React tree alive across
+  navigations, so a slot pushed only on mount would silently stay blank on every
+  subsequent page.
+- **Ads never render on a page without prices** (`mayShowAds`). AdSense prohibits ads on
+  pages without publisher content, and "no arrivals reported today" or an upstream
+  failure is exactly that. It is also just bad: the reader came for a number.
+- `/ads.txt` is generated from the publisher ID. Without it most demand sources refuse to
+  bid and you quietly lose most of the revenue.
+
+### Still to do before serving ads in the EEA/UK
+
+Google requires a certified Consent Management Platform for that traffic, and none is
+wired up. If your audience is Indian this may not bind immediately, but India's DPDP Act
+has its own consent expectations — worth checking before you switch ads on.
+
 ## Roadmap
 
 - **Phase 2** — complete Telugu, WhatsApp share, localStorage watchlist and offline
