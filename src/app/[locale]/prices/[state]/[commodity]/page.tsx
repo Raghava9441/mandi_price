@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { commoditiesInState, findCommodity, findState, getStates } from '@/lib/catalog';
 import { PRERENDER_PRICE_PAGES } from '@/lib/prerender';
 import { getSource } from '@/lib/mandi';
+import { ConfigError } from '@/lib/mandi/source';
 import { summarise } from '@/lib/mandi/derive';
 import type { PriceRecord } from '@/lib/mandi/types';
 import { formatDate, formatNumber, formatPrice, formatUpdatedIST } from '@/lib/format';
@@ -75,9 +76,15 @@ async function load(params: Params) {
     });
     return { state, commodity, page, unavailable: false };
   } catch (error) {
+    // A missing key and an upstream outage render identically to the reader, so the log
+    // has to say which one it was - otherwise a deployment misconfiguration looks like a
+    // government API problem and gets debugged in the wrong place entirely.
     console.error(
-      `[prices] upstream failed for ${state.api} / ${commodity.api}:`,
-      error instanceof Error ? error.message : error,
+      error instanceof ConfigError
+        ? `[prices] MISCONFIGURED (not an upstream outage): ${error.message}`
+        : `[prices] upstream failed for ${state.api} / ${commodity.api}: ${
+            error instanceof Error ? error.message : String(error)
+          }`,
     );
     return {
       state,

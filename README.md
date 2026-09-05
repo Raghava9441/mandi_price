@@ -74,6 +74,28 @@ Set these on the host (Vercel, or anywhere else):
 | `PRERENDER_PRICE_PAGES` | Optional, default `12`. |
 | `PRERENDER_MANDI_PAGES` | Optional, default `0`. |
 
+### Diagnosing "Prices could not be loaded right now"
+
+That message has several very different causes which look identical on the page. Hit
+`/api/health` on the deployment — it makes one real upstream call and reports what
+happened, without revealing the key:
+
+```bash
+curl https://your-deployment.vercel.app/api/health
+```
+
+| What it shows | What it means |
+|---|---|
+| `upstream.kind: "configuration"` | `DATA_GOV_API_KEY` is not set on the host. |
+| `apiKey.hadSurroundingJunk: true` | The key was pasted with quotes or a trailing newline. Upstream rejects that with a 403 that looks exactly like an outage. |
+| `apiKey.length` ≠ 56 | The value is not a single valid key. |
+| `snapshotModeMisconfigured: true` | `MANDI_SOURCE=snapshot` is set on the host; remove it. |
+| `upstream.kind: "upstream"` with HTTP 429/403 | Genuine rate limiting from data.gov.in. |
+| `upstream.ok: true` | The API is fine — any stale "unavailable" page is cached; redeploy to clear it. |
+
+Note that after fixing an environment variable you should **redeploy**, not just wait.
+Prerendered pages hold whatever they rendered at build time until the next revalidation.
+
 **Why the prerender counts are so low.** Every prerendered price or mandi page costs one
 upstream request during the build, and data.gov.in rate-limits hard — it returns 429 and
 then 403 well before a few hundred requests. Prerendering the whole catalog does not just

@@ -1,4 +1,4 @@
-import { UpstreamError, type MandiSource } from './source';
+import { ConfigError, UpstreamError, type MandiSource } from './source';
 import type { Facets, PricePage, PriceQuery, PriceRecord } from './types';
 import { upstreamEnvelopeSchema, upstreamRecordSchema } from './upstream-schema';
 import { loadCatalog } from '../catalog';
@@ -19,7 +19,7 @@ const REQUESTED_PAGE_SIZE = 100;
 /** Never walk the whole dataset by accident. */
 const DEFAULT_RECORD_LIMIT = 5_000;
 
-const REQUEST_TIMEOUT_MS = 8_000;
+const REQUEST_TIMEOUT_MS = Number(process.env.UPSTREAM_TIMEOUT_MS ?? 15_000);
 const MAX_ATTEMPTS = 3;
 
 /**
@@ -162,10 +162,15 @@ export class ApiSource implements MandiSource {
   private readonly fetchImpl: typeof fetch;
 
   constructor(options: ApiSourceOptions = {}) {
-    const key = options.apiKey ?? process.env.DATA_GOV_API_KEY ?? '';
+    // Trimmed and unquoted: a key pasted into a hosting dashboard very often arrives with
+    // a trailing newline or wrapping quotes, and upstream answers that with a flat 403
+    // that looks identical to an outage.
+    const raw = options.apiKey ?? process.env.DATA_GOV_API_KEY ?? '';
+    const key = raw.trim().replace(/^['"]+|['"]+$/g, '');
     if (!key) {
-      throw new Error(
-        'DATA_GOV_API_KEY is not set. Get a key at https://data.gov.in and put it in .env.local.',
+      throw new ConfigError(
+        'DATA_GOV_API_KEY is not set. Locally, put it in .env.local; on a deployment host, ' +
+          'set it in the project environment variables and redeploy.',
       );
     }
     this.apiKey = key;

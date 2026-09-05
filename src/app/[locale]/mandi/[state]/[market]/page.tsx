@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { findMarket, findState, getStates } from '@/lib/catalog';
 import { PRERENDER_MANDI_PAGES } from '@/lib/prerender';
 import { getSource } from '@/lib/mandi';
+import { ConfigError } from '@/lib/mandi/source';
 import { summarise } from '@/lib/mandi/derive';
 import { formatDate, formatNumber, formatPrice, formatUpdatedIST } from '@/lib/format';
 import { getDictionary, isLocale, t, type Locale } from '@/lib/i18n';
@@ -64,9 +65,14 @@ async function load(params: Params) {
     });
     return { state, market, page, unavailable: false };
   } catch (error) {
+    // See the note on the price page: configuration failures must not be logged as
+    // upstream outages.
     console.error(
-      `[mandi] upstream failed for ${market.api}:`,
-      error instanceof Error ? error.message : error,
+      error instanceof ConfigError
+        ? `[mandi] MISCONFIGURED (not an upstream outage): ${error.message}`
+        : `[mandi] upstream failed for ${market.api}: ${
+            error instanceof Error ? error.message : String(error)
+          }`,
     );
     return {
       state,
